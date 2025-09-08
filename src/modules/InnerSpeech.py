@@ -14,7 +14,15 @@ class InnerSpeech:
     instruction. The output is treated as an internally narrated thought.
     """
     def __init__(self, reasoning_layer: Optional[ReasoningLayer] = None):
-        self.reasoning_layer = reasoning_layer or ReasoningLayer()
+        if reasoning_layer is None:
+            try:
+                from src.config.reasoning_config import create_reasoning_layer
+                self.reasoning_layer = create_reasoning_layer()
+            except ImportError:
+                # Fallback to default Perplexity
+                self.reasoning_layer = ReasoningLayer()
+        else:
+            self.reasoning_layer = reasoning_layer
 
     def process(self, bundle: Dict[str, Any]) -> Dict[str, Any]:
         pfc = bundle.get('pfc', {})

@@ -59,21 +59,21 @@ class NeuroChemistry:
             }
         }
         
-        # Transporter states
+        # Transporter states (reduced reuptake rates for better balance)
         self.transporters = {
             'dopamine': {
                 'density': 50.0,
-                'k_reuptake': 0.1,
+                'k_reuptake': 0.03,  # Reduced from 0.1
                 'scaling': 1.0
             },
             'serotonin': {
                 'density': 40.0,
-                'k_reuptake': 0.08,
+                'k_reuptake': 0.025, # Reduced from 0.08
                 'scaling': 1.0
             },
             'norepinephrine': {
                 'density': 30.0,
-                'k_reuptake': 0.12,
+                'k_reuptake': 0.04,  # Reduced from 0.12
                 'scaling': 1.0
             }
         }
@@ -87,17 +87,17 @@ class NeuroChemistry:
             'testosterone': 3.0
         }
         
-        # Diffusion/decay coefficients
+        # Diffusion/decay coefficients (reduced for better balance)
         self.diffusion_coeffs = {
-            'dopamine': 0.1,
-            'serotonin': 0.08,
-            'norepinephrine': 0.12,
-            'oxytocin': 0.05,
-            'testosterone': 0.03,
-            'histamine': 0.15,
-            'acetylcholine': 0.2,
-            'glutamate': 0.25,
-            'gaba': 0.2
+            'dopamine': 0.02,      # Reduced from 0.1
+            'serotonin': 0.015,    # Reduced from 0.08
+            'norepinephrine': 0.025, # Reduced from 0.12
+            'oxytocin': 0.01,      # Reduced from 0.05
+            'testosterone': 0.005, # Reduced from 0.03
+            'histamine': 0.03,     # Reduced from 0.15
+            'acetylcholine': 0.04, # Reduced from 0.2
+            'glutamate': 0.05,     # Reduced from 0.25
+            'gaba': 0.04           # Reduced from 0.2
         }
         
         # Homeostatic targets
@@ -106,6 +106,28 @@ class NeuroChemistry:
             'serotonin': 0.5,
             'norepinephrine': 0.4,
             'oxytocin': 0.3
+        }
+        
+        # Synthesis rates for natural replenishment
+        self.synthesis_rates = {
+            'dopamine': 0.05,
+            'serotonin': 0.04,
+            'norepinephrine': 0.03,
+            'oxytocin': 0.02,
+            'testosterone': 0.01,
+            'histamine': 0.03,
+            'acetylcholine': 0.06,
+            'glutamate': 0.08,
+            'gaba': 0.06
+        }
+        
+        # Release pool replenishment rates
+        self.pool_replenishment_rates = {
+            'dopamine': 0.8,
+            'serotonin': 0.6,
+            'norepinephrine': 0.5,
+            'oxytocin': 0.3,
+            'testosterone': 0.2
         }
         
         # Learning rates for homeostasis
@@ -144,24 +166,44 @@ class NeuroChemistry:
                 unbound_amount = unbind_rate
                 self.nt_levels[nt] += unbound_amount
         
-        # 3. Reuptake by transporters
+        # 3. Reuptake by transporters (with saturation kinetics)
         for nt, transporter in self.transporters.items():
             if nt in self.nt_levels:
-                reuptake_rate = (transporter['k_reuptake'] * 
-                               transporter['scaling'] * 
-                               transporter['density'] * 
-                               self.nt_levels[nt] * dt)
-                self.nt_levels[nt] = max(0, self.nt_levels[nt] - reuptake_rate)
+                nt_level = self.nt_levels[nt]
+                # Michaelis-Menten-like kinetics for saturation
+                km = 0.5  # Half-saturation constant
+                vmax = (transporter['k_reuptake'] * 
+                       transporter['scaling'] * 
+                       transporter['density'])
+                
+                reuptake_rate = (vmax * nt_level / (km + nt_level)) * dt
+                self.nt_levels[nt] = max(0, nt_level - reuptake_rate)
         
-        # 4. Diffusion/Decay
+        # 4. Natural synthesis and replenishment
+        for nt in self.nt_levels:
+            # Baseline synthesis to prevent complete depletion
+            synthesis_rate = self.synthesis_rates.get(nt, 0.02)
+            synthesis_amount = synthesis_rate * dt
+            self.nt_levels[nt] += synthesis_amount
+            
+            # Replenish release pools
+            if nt in self.release_pools:
+                pool_replenish_rate = self.pool_replenishment_rates.get(nt, 0.1)
+                max_pool = 15.0  # Maximum pool size
+                current_pool = self.release_pools[nt]
+                if current_pool < max_pool:
+                    replenish_amount = pool_replenish_rate * dt * (max_pool - current_pool) / max_pool
+                    self.release_pools[nt] = min(max_pool, current_pool + replenish_amount)
+        
+        # 5. Diffusion/Decay (moved after synthesis for balance)
         for nt, level in self.nt_levels.items():
-            decay = self.diffusion_coeffs.get(nt, 0.1) * level * dt
+            decay = self.diffusion_coeffs.get(nt, 0.02) * level * dt
             self.nt_levels[nt] = max(0, level - decay)
         
-        # 5. Homeostatic adjustments
+        # 6. Homeostatic adjustments
         self._apply_homeostatic_adjustments(dt)
         
-        # 6. Record state
+        # 7. Record state
         current_state = {
             'nt_levels': self.nt_levels.copy(),
             'receptor_occupancy': self.get_receptor_occupancy(),

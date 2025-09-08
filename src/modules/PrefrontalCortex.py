@@ -159,8 +159,8 @@ class PrefrontalCortex:
             'candidate_actions': candidate_actions,
             'rationale': rationale,
             'vs_influence': {
-                'top_score': top_thought.get('overall_score', 0.0),
-                'dominant_tags': top_thought.get('tags', [])[:3]
+                'top_score': top_thought.get('overall_score', 0.0) if top_thought else 0.0,
+                'dominant_tags': top_thought.get('tags', [])[:3] if top_thought else []
             }
         }
         bundle['cognitive_actions'] = candidate_actions

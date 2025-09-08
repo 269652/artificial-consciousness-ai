@@ -1,0 +1,22 @@
+2025-09-08 18:20:19,340 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:20:21,948 | aci.level1.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'
+2025-09-08 18:20:22,096 | aci.level1.error | ERROR | Failed to save memory graph to persistent storage: can't adapt type 'numpy.float32'
+2025-09-08 18:20:44,015 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:21:10,620 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:21:44,964 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:22:40,264 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:23:36,644 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:23:58,208 | aci.level1.error | ERROR | Failed to save memory graph to persistent storage: can't adapt type 'numpy.float32'
+2025-09-08 18:24:25,239 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:25:13,024 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:26:01,968 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:26:51,144 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:27:30,194 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:27:32,941 | aci.level1.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'
+2025-09-08 18:27:33,062 | aci.level1.error | ERROR | Failed to save memory graph to persistent storage: can't adapt type 'numpy.float32'
+2025-09-08 18:28:00,498 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:28:47,304 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:29:20,654 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:29:49,502 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:30:19,764 | aci.level1.error | ERROR | Failed to save episodic memory: Object of type ndarray is not JSON serializable
+2025-09-08 18:30:20,492 | aci.level1.error | ERROR | Failed to save memory graph to persistent storage: can't adapt type 'numpy.float32'

@@ -1,0 +1,24 @@
+2025-09-08 18:39:39,042 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 18:42:38,779 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 18:42:39,187 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 18:42:39,195 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 18:42:39,210 | aci.level1.info | INFO | Loaded existing knowledge graph
+2025-09-08 18:42:39,230 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 18:42:39,237 | aci.level1.info | INFO | Starting simulation
+2025-09-08 18:42:39,244 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 18:42:39,247 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 18:42:39,263 | aci.level1.info | INFO | Processing input
+2025-09-08 18:42:48,549 | aci.level1.info | INFO | Thought: Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 18:42:49,875 | aci.level1.info | INFO | Action: speak - I'm just here, observing. I don't have a specific reason for being here.
+2025-09-08 18:42:50,736 | aci.level1.info | INFO | NT_LEVELS: dopamine=2.66, serotonin=0.37, norepinephrine=1.04, oxytocin=0.71, testosterone=0.66, histamine=0.32, acetylcholine=0.44, glutamate=0.65, gaba=0.44
+2025-09-08 18:42:53,829 | aci.level1.info | INFO | Generated response
+2025-09-08 18:43:04,437 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:43:04,446 | aci.level1.info | INFO | Thought: I feel so alone here.
+2025-09-08 18:43:04,464 | aci.level1.info | INFO | Processing input
+2025-09-08 18:43:14,127 | aci.level1.info | INFO | Thought: I feel so alone here.
+2025-09-08 18:43:14,421 | aci.level1.info | INFO | Action: speak - I'm here with you, Plato. You don't have to be alone.
+2025-09-08 18:43:15,146 | aci.level1.info | INFO | NT_LEVELS: dopamine=5.63, serotonin=0.38, norepinephrine=2.06, oxytocin=0.97, testosterone=0.81, histamine=0.34, acetylcholine=0.48, glutamate=0.69, gaba=0.48
+2025-09-08 18:43:15,155 | aci.level1.info | INFO | Generated response
+2025-09-08 18:43:24,653 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:43:51,894 | aci.level1.info | INFO | Thought: The city feels so still and new at this hour, waiting for the day to begin.
+2025-09-08 18:43:52,237 | aci.level1.info | INFO | Action: reflect - The city feels so still and new at this hour, waiting for the day to begin.

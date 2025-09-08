@@ -1,0 +1,21 @@
+2025-09-08 18:39:41,640 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 18:39:41,666 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 18:42:18,743 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 18:42:21,158 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 18:42:23,641 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 18:42:26,471 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 18:42:38,704 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 18:42:39,241 | aci.level2.info | INFO | Simulation step started
+2025-09-08 18:42:39,252 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 18:42:50,697 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 18:42:53,768 | aci.level2.info | INFO | Periodic knowledge extraction completed
+2025-09-08 18:42:53,841 | aci.level2.info | INFO | Performance: dmn_step_duration = 14.588643550872803 seconds
+2025-09-08 18:42:53,875 | aci.level2.info | INFO | Step completed
+2025-09-08 18:42:54,384 | aci.level2.info | INFO | Simulation step started
+2025-09-08 18:43:04,456 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 18:43:14,427 | aci.level2.info | INFO | Memory persist: floating_memory
+2025-09-08 18:43:15,118 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 18:43:15,161 | aci.level2.info | INFO | Performance: dmn_step_duration = 10.705262899398804 seconds
+2025-09-08 18:43:15,173 | aci.level2.info | INFO | Step completed
+2025-09-08 18:43:15,679 | aci.level2.info | INFO | Simulation step started
+2025-09-08 18:43:24,661 | aci.level2.info | INFO | Starting DMN step

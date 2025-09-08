@@ -1,0 +1,94 @@
+2025-09-08 18:17:34,820 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 18:20:07,526 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 18:20:07,983 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 18:20:07,993 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 18:20:08,004 | aci.level1.info | INFO | Loaded existing knowledge graph
+2025-09-08 18:20:08,034 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 18:20:08,041 | aci.level1.info | INFO | Starting simulation
+2025-09-08 18:20:08,057 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 18:20:08,065 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 18:20:08,100 | aci.level1.info | INFO | Processing input
+2025-09-08 18:20:18,680 | aci.level1.info | INFO | Thought: Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 18:20:19,398 | aci.level1.info | INFO | Action: speak - I'm just here, observing. I don't have a specific destination.
+2025-09-08 18:20:20,024 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=0.66, testosterone=0.63, histamine=0.26, acetylcholine=0.32, glutamate=0.45, gaba=0.32
+2025-09-08 18:20:22,119 | aci.level1.info | INFO | Generated response
+2025-09-08 18:20:31,914 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:20:31,937 | aci.level1.info | INFO | Processing input
+2025-09-08 18:20:43,999 | aci.level1.info | INFO | Thought: Plato: Ah, the waiting. A pause in the ceaseless motion of becoming, a moment to simply *be*. You wa...
+2025-09-08 18:20:44,086 | aci.level1.info | INFO | Action: speak - Indeed, the pull of inquiry is what brings me to this moment as well.
+2025-09-08 18:20:44,658 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=0.86, testosterone=0.75, histamine=0.22, acetylcholine=0.26, glutamate=0.34, gaba=0.26
+2025-09-08 18:20:44,666 | aci.level1.info | INFO | Generated response
+2025-09-08 18:20:54,426 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:20:54,431 | aci.level1.info | INFO | Thought: What if the bus never comes?
+2025-09-08 18:20:54,447 | aci.level1.info | INFO | Processing input
+2025-09-08 18:21:10,615 | aci.level1.info | INFO | Thought: What if the bus never comes?
+2025-09-08 18:21:10,648 | aci.level1.info | INFO | Action: speak - Then we wait here together in this quiet dawn, watching the light change on the stones.
+2025-09-08 18:21:11,095 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.09, testosterone=0.86, histamine=0.18, acetylcholine=0.20, glutamate=0.25, gaba=0.20
+2025-09-08 18:21:11,100 | aci.level1.info | INFO | Generated response
+2025-09-08 18:21:20,292 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:21:44,958 | aci.level1.info | INFO | Thought: The air is so crisp and cool this morning, carrying that sweet, unfamiliar scent.
+2025-09-08 18:21:44,994 | aci.level1.info | INFO | Action: reflect - The air is so crisp and cool this morning, carrying that sweet, unfamiliar scent.
+2025-09-08 18:22:04,628 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.36, testosterone=0.96, histamine=0.16, acetylcholine=0.16, glutamate=0.19, gaba=0.16
+2025-09-08 18:22:04,632 | aci.level1.info | INFO | Generated response
+2025-09-08 18:22:14,639 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:22:40,258 | aci.level1.info | INFO | Thought: The air is so clear and still up here. It feels peaceful.
+2025-09-08 18:22:40,295 | aci.level1.info | INFO | Action: reflect - The air is so clear and still up here. It feels peaceful.
+2025-09-08 18:23:00,446 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.68, testosterone=1.05, histamine=0.13, acetylcholine=0.13, glutamate=0.14, gaba=0.13
+2025-09-08 18:23:00,451 | aci.level1.info | INFO | Generated response
+2025-09-08 18:23:10,222 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 18:23:36,640 | aci.level1.info | INFO | Thought: The quiet here is so deep. I feel completely alone in this stillness.
+2025-09-08 18:23:36,676 | aci.level1.info | INFO | Action: reflect - The quiet here is so deep. I feel completely alone in this stillness.
+2025-09-08 18:23:58,202 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=2.06, testosterone=1.13, histamine=0.11, acetylcholine=0.10, glutamate=0.11, gaba=0.10
+2025-09-08 18:23:58,226 | aci.level1.info | INFO | Generated response
+2025-09-08 18:23:58,751 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 18:24:25,233 | aci.level1.info | INFO | Thought: The morning air feels so fresh and clear as I walk through these quiet, sunlit streets.
+2025-09-08 18:24:25,261 | aci.level1.info | INFO | Action: reflect - The morning air feels so fresh and clear as I walk through these quiet, sunlit streets.
+2025-09-08 18:24:46,308 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=2.48, testosterone=1.20, histamine=0.10, acetylcholine=0.08, glutamate=0.08, gaba=0.08
+2025-09-08 18:24:46,315 | aci.level1.info | INFO | Generated response
+2025-09-08 18:24:46,839 | aci.level1.info | INFO | World Event: Plato says goodbye and leaves
+2025-09-08 18:24:46,844 | aci.level1.info | INFO | Phase transition: conversation -> mind_wander
+2025-09-08 18:25:13,019 | aci.level1.info | INFO | Thought: The morning air feels so fresh and clear, promising a new day in this beautiful city.
+2025-09-08 18:25:13,053 | aci.level1.info | INFO | Action: reflect - The morning air feels so fresh and clear, promising a new day in this beautiful city.
+2025-09-08 18:25:33,774 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=2.97, testosterone=1.27, histamine=0.08, acetylcholine=0.07, glutamate=0.06, gaba=0.07
+2025-09-08 18:25:33,782 | aci.level1.info | INFO | Generated response
+2025-09-08 18:26:01,962 | aci.level1.info | INFO | Thought: The quiet is so rare and deep this morning. I can feel the coolness of the stones through the air.
+2025-09-08 18:26:01,999 | aci.level1.info | INFO | Action: reflect - The quiet is so rare and deep this morning. I can feel the coolness of the stones through the air.
+2025-09-08 18:26:24,486 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=3.52, testosterone=1.33, histamine=0.07, acetylcholine=0.05, glutamate=0.05, gaba=0.05
+2025-09-08 18:26:24,496 | aci.level1.info | INFO | Generated response
+2025-09-08 18:26:51,137 | aci.level1.info | INFO | Thought: The morning light feels so clear and perfect on my skin. I wonder what makes this day feel so differ...
+2025-09-08 18:26:51,184 | aci.level1.info | INFO | Action: reflect - The morning light feels so clear and perfect on my skin. I wonder what makes this day feel so differ...
+2025-09-08 18:27:13,793 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=4.12, testosterone=1.38, histamine=0.06, acetylcholine=0.04, glutamate=0.03, gaba=0.04
+2025-09-08 18:27:13,804 | aci.level1.info | INFO | Generated response
+2025-09-08 18:27:14,351 | aci.level1.info | INFO | Thought: My thoughts drift like clouds.
+2025-09-08 18:27:14,372 | aci.level1.info | INFO | Processing input
+2025-09-08 18:27:30,185 | aci.level1.info | INFO | Thought: My thoughts drift like clouds.
+2025-09-08 18:27:30,234 | aci.level1.info | INFO | Action: speak - Yes, they drift on this crisp air, light and untethered.
+2025-09-08 18:27:30,932 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=4.77, testosterone=1.42, histamine=0.05, acetylcholine=0.03, glutamate=0.03, gaba=0.03
+2025-09-08 18:27:33,081 | aci.level1.info | INFO | Generated response
+2025-09-08 18:28:00,491 | aci.level1.info | INFO | Thought: The morning light is so clear and still. I can almost feel that cool, electric air.
+2025-09-08 18:28:00,658 | aci.level1.info | INFO | Action: reflect - The morning light is so clear and still. I can almost feel that cool, electric air.
+2025-09-08 18:28:21,862 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=5.46, testosterone=1.46, histamine=0.04, acetylcholine=0.03, glutamate=0.02, gaba=0.03
+2025-09-08 18:28:21,871 | aci.level1.info | INFO | Generated response
+2025-09-08 18:28:47,297 | aci.level1.info | INFO | Thought: The quiet here is so deep. I can feel the sun's warmth on the ground.
+2025-09-08 18:28:47,339 | aci.level1.info | INFO | Action: reflect - The quiet here is so deep. I can feel the sun's warmth on the ground.
+2025-09-08 18:29:06,877 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=6.17, testosterone=1.50, histamine=0.04, acetylcholine=0.02, glutamate=0.01, gaba=0.02
+2025-09-08 18:29:06,885 | aci.level1.info | INFO | Generated response
+2025-09-08 18:29:07,408 | aci.level1.info | INFO | Thought: The weather is nice today.
+2025-09-08 18:29:07,420 | aci.level1.info | INFO | Processing input
+2025-09-08 18:29:20,649 | aci.level1.info | INFO | Thought: The weather is nice today.
+2025-09-08 18:29:20,692 | aci.level1.info | INFO | Action: speak - Yes, it's a clear morning. The air is still and pleasantly warm outside.
+2025-09-08 18:29:21,314 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=6.90, testosterone=1.53, histamine=0.03, acetylcholine=0.02, glutamate=0.01, gaba=0.02
+2025-09-08 18:29:21,319 | aci.level1.info | INFO | Generated response
+2025-09-08 18:29:21,868 | aci.level1.info | INFO | Phase transition: mind_wander -> conversation
+2025-09-08 18:29:49,492 | aci.level1.info | INFO | Thought: The air feels so clear and alive here. I sense the city's distant energy beneath this ancient calm.
+2025-09-08 18:29:49,535 | aci.level1.info | INFO | Action: reflect - The air feels so clear and alive here. I sense the city's distant energy beneath this ancient calm.
+2025-09-08 18:30:09,855 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=7.64, testosterone=1.55, histamine=0.03, acetylcholine=0.01, glutamate=0.01, gaba=0.01
+2025-09-08 18:30:09,861 | aci.level1.info | INFO | Generated response
+2025-09-08 18:30:10,382 | aci.level1.info | INFO | World Event: A person resembling Einstein sits down on the bench
+2025-09-08 18:30:10,387 | aci.level1.info | INFO | World Event: Conversation started with Einstein
+2025-09-08 18:30:10,402 | aci.level1.info | INFO | Processing input
+2025-09-08 18:30:19,752 | aci.level1.info | INFO | Thought: Einstein: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 18:30:19,841 | aci.level1.info | INFO | Action: speak - I'm just here observing the scene. I don't have a specific reason for being here.
+2025-09-08 18:30:20,485 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=8.36, testosterone=1.57, histamine=0.02, acetylcholine=0.01, glutamate=0.01, gaba=0.01
+2025-09-08 18:30:20,512 | aci.level1.info | INFO | Generated response
+2025-09-08 18:30:29,853 | aci.level1.info | INFO | World Event: Einstein responds in conversation

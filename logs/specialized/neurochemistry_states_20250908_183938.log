@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-09-08T18:42:50.705364",
+  "nt_levels": {
+    "dopamine": 2.6623333333333337,
+    "serotonin": 0.36773333333333336,
+    "norepinephrine": 1.04325,
+    "oxytocin": 0.7128,
+    "testosterone": 0.6567000000000001,
+    "histamine": 0.32009999999999994,
+    "acetylcholine": 0.4416,
+    "glutamate": 0.6459999999999999,
+    "gaba": 0.4416
+  },
+  "change_trigger": "",
+  "component": "dmn",
+  "session_id": "20250908_183938",
+  "step": 0,
+  "cycle_duration": 11.45283842086792
+}
+---
+{
+  "timestamp": "2025-09-08T18:43:15.123710",
+  "nt_levels": {
+    "dopamine": 5.62954451344813,
+    "serotonin": 0.3819923606106478,
+    "norepinephrine": 2.062511513639322,
+    "oxytocin": 0.9745560000000001,
+    "testosterone": 0.8132135000000001,
+    "histamine": 0.339597,
+    "acetylcholine": 0.481536,
+    "glutamate": 0.6896999999999999,
+    "gaba": 0.481536
+  },
+  "change_trigger": "",
+  "component": "dmn",
+  "session_id": "20250908_183938",
+  "step": 1,
+  "cycle_duration": 10.667471408843994
+}
+---

@@ -2,6 +2,8 @@ from __future__ import annotations
 from typing import Dict, Any, List, Optional, Tuple
 import logging
 import math
+import numpy as np
+import json
 
 from src.memory.graph.controller import MemoryGraphController
 from src.memory.graph.node import Node
@@ -19,6 +21,21 @@ except ImportError:
 
 logger = logging.getLogger(__name__)
 aci_logger = get_logger()
+
+def _sanitize_for_json(obj):
+    """Convert numpy arrays and other non-JSON-serializable objects to JSON-safe format."""
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, np.floating):
+        return float(obj)
+    elif isinstance(obj, np.integer):
+        return int(obj)
+    elif isinstance(obj, dict):
+        return {key: _sanitize_for_json(value) for key, value in obj.items()}
+    elif isinstance(obj, (list, tuple)):
+        return [_sanitize_for_json(item) for item in obj]
+    else:
+        return obj
 
 class Hippocampus:
     """Hippocampus module (retrieval-focused) with persistent episodic memory.
@@ -217,13 +234,13 @@ class Hippocampus:
                 episode_id=episode_id,
                 sequence_number=sequence_number,
                 content=content,
-                sensory_data=sensory_data,
-                neurochemistry=neurochemistry,
-                emotional_context=emotional_context,
-                spatial_context=spatial_context,
-                social_context=social_context,
-                thought_chain=thought_chain,
-                embedding=embedding,
+                sensory_data=_sanitize_for_json(sensory_data),
+                neurochemistry=_sanitize_for_json(neurochemistry),
+                emotional_context=_sanitize_for_json(emotional_context),
+                spatial_context=_sanitize_for_json(spatial_context),
+                social_context=_sanitize_for_json(social_context),
+                thought_chain=_sanitize_for_json(thought_chain),
+                embedding=_sanitize_for_json(embedding),
                 tags=tags
             )
 
@@ -240,12 +257,12 @@ class Hippocampus:
                     "episode_id": episode_id,
                     "sequence_number": sequence_number,
                     "content": content,
-                    "sensory_data": sensory_data or {},
-                    "neurochemistry": neurochemistry or {},
-                    "emotional_context": emotional_context or {},
-                    "spatial_context": spatial_context or {},
-                    "social_context": social_context or {},
-                    "thought_chain": thought_chain or [],
+                    "sensory_data": _sanitize_for_json(sensory_data or {}),
+                    "neurochemistry": _sanitize_for_json(neurochemistry or {}),
+                    "emotional_context": _sanitize_for_json(emotional_context or {}),
+                    "spatial_context": _sanitize_for_json(spatial_context or {}),
+                    "social_context": _sanitize_for_json(social_context or {}),
+                    "thought_chain": _sanitize_for_json(thought_chain or []),
                     "memory_id": memory_id,
                     "layer": "episodic_memory"
                 }

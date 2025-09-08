@@ -47,7 +47,14 @@ def derive_reasoning_modulator(neurochemistry: Dict[str, float]) -> str:
 
 if __name__ == "__main__":
     dmn = DefaultModeNetwork()
-    reasoner = ReasoningLayer()
+    
+    # Use the factory function to create ReasoningLayer with proper configuration
+    try:
+        from src.config.reasoning_config import create_reasoning_layer
+        reasoner = create_reasoning_layer()
+    except ImportError:
+        # Fallback to default Perplexity
+        reasoner = ReasoningLayer()
 
     conversation = []  # list of {'role': 'user'|'assistant', 'content': str}
 

@@ -6,6 +6,7 @@ from typing import List, Set, Deque, Dict, Any
 from collections import deque
 import json
 import os
+from datetime import datetime
 from .Thought import Thought
 
 
@@ -13,17 +14,37 @@ class MemoryGraphController:
     def __init__(self):
         self.graph = MemoryGraph()
 
+    def _to_timestamp(self, ts):
+        """Convert timestamp to float for consistent comparison"""
+        if isinstance(ts, datetime):
+            return ts.timestamp()
+        elif isinstance(ts, (int, float)):
+            return float(ts)
+        else:
+            return time.time()  # fallback
+
     def insert_nodes(self, num_nodes: int):
         for i in range(num_nodes):
             node = Node(node_id=f"n{i}", tags=[f"tag{i%10}"])
             self.graph.add_node(node)
 
     def _cosine_similarity(self, a: List[float], b: List[float]) -> float:
-        if not a or not b or len(a) != len(b):
+        # Ensure we have valid embedding lists
+        if not a or not b or not isinstance(a, list) or not isinstance(b, list):
             return 0.0
-        dot = sum(x * y for x, y in zip(a, b))
-        na = math.sqrt(sum(x * x for x in a))
-        nb = math.sqrt(sum(y * y for y in b))
+        if len(a) != len(b):
+            return 0.0
+        
+        # Ensure all elements are numeric
+        try:
+            a_nums = [float(x) for x in a]
+            b_nums = [float(x) for x in b]
+        except (TypeError, ValueError):
+            return 0.0
+        
+        dot = sum(x * y for x, y in zip(a_nums, b_nums))
+        na = math.sqrt(sum(x * x for x in a_nums))
+        nb = math.sqrt(sum(y * y for y in b_nums))
         if na == 0 or nb == 0:
             return 0.0
         return dot / (na * nb)
@@ -36,11 +57,16 @@ class MemoryGraphController:
             self.graph.edges.add_edge(source.id, target.id, "similarity", weight=similarity)
         tag_overlap = len(set(source.tags) & set(target.tags))
         if tag_overlap:
-            time_delta = abs(source.timestamp - target.timestamp) + 1e-6
+            source_ts = self._to_timestamp(source.timestamp)
+            target_ts = self._to_timestamp(target.timestamp)
+            time_delta = abs(source_ts - target_ts) + 1e-6
             relevance = tag_overlap / (1.0 + math.log10(time_delta + 1))
             self.graph.edges.add_edge(source.id, target.id, "relevance", weight=relevance)
-        if source.timestamp > target.timestamp:
-            dt = source.timestamp - target.timestamp
+        
+        source_ts = self._to_timestamp(source.timestamp)
+        target_ts = self._to_timestamp(target.timestamp)
+        if source_ts > target_ts:
+            dt = source_ts - target_ts
             causality = 1.0 / (1.0 + dt)
             self.graph.edges.add_edge(source.id, target.id, "causality", weight=causality)
 

@@ -76,46 +76,76 @@ class ReasoningResult:
     conversation_context: str = ""  # NEW: recent conversation snippet integrated into prompt
 
 class ReasoningLayer:
-    def __init__(self, model_name="sonar-pro"):
-        # print(f"🚀 Loading Perplexity model {model_name}...")
+    def __init__(self, model_name="sonar-pro", provider="perplexity"):
+        """
+        Initialize ReasoningLayer with support for multiple API providers.
         
-        self.api_key = os.getenv("PERPLEXITY_API_KEY")
-        if not self.api_key:
-            raise RuntimeError("Set PERPLEXITY_API_KEY in environment variables")
-        
+        Args:
+            model_name: Model name to use (e.g., "sonar-pro" for Perplexity, "deepseek-chat" for DeepSeek)
+            provider: API provider ("perplexity" or "deepseek")
+        """
+        self.provider = provider.lower()
         self.model_name = model_name
-        # print(f"✅ Perplexity model {model_name} ready!")
+        
+        # Initialize API credentials based on provider
+        if self.provider == "perplexity":
+            self.api_key = os.getenv("PERPLEXITY_API_KEY")
+            if not self.api_key:
+                raise RuntimeError("Set PERPLEXITY_API_KEY in environment variables")
+            self.api_url = "https://api.perplexity.ai/chat/completions"
+            logger.info(f"✅ Perplexity ReasoningLayer initialized with model {model_name}")
+        elif self.provider == "deepseek":
+            self.api_key = os.getenv("DEEPSEEK_API_KEY")
+            if not self.api_key:
+                raise RuntimeError("Set DEEPSEEK_API_KEY in environment variables")
+            self.api_url = "https://api.deepseek.com/chat/completions"
+            logger.info(f"✅ DeepSeek ReasoningLayer initialized with model {model_name}")
+        else:
+            raise ValueError(f"Unsupported provider: {provider}. Use 'perplexity' or 'deepseek'")
 
-    def _perplexity_generate(self, prompt: str, max_new_tokens=60) -> str:
-        logger.debug(f"[API REQUEST] Model: {self.model_name}, Prompt: '{prompt[:100]}...'")
+    def _api_generate(self, prompt: str, max_new_tokens=60) -> str:
+        """Unified API generation method supporting both Perplexity and DeepSeek."""
+        logger.debug(f"[API REQUEST] Provider: {self.provider}, Model: {self.model_name}, Prompt: '{prompt[:100]}...'")
         
         messages = [{"role": "user", "content": prompt}]
         
+        # Prepare request parameters
+        request_data = {
+            "model": self.model_name,
+            "messages": messages,
+            "max_tokens": max_new_tokens,
+            "temperature": 0.7,
+            "top_p": 0.9,
+        }
+        
+        # DeepSeek-specific adjustments
+        if self.provider == "deepseek":
+            # DeepSeek uses "max_tokens" but may have different parameter preferences
+            request_data.update({
+                "stream": False,  # Ensure non-streaming response
+                "frequency_penalty": 0.0,
+                "presence_penalty": 0.0,
+            })
+        
         resp = requests.post(
-            "https://api.perplexity.ai/chat/completions",
+            self.api_url,
             headers={
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
             },
-            json={
-                "model": self.model_name,
-                "messages": messages,
-                "max_tokens": max_new_tokens,
-                "temperature": 0.7,
-                "top_p": 0.9,
-            }
+            json=request_data
         )
         
         try:
             resp.raise_for_status()
             data = resp.json()
-            logger.debug(f"[API RESPONSE] Status: {resp.status_code}, Data: {data}")
+            logger.debug(f"[API RESPONSE] Provider: {self.provider}, Status: {resp.status_code}")
             
             if "choices" in data and len(data["choices"]) > 0:
                 response = data["choices"][0]["message"]["content"]
                 logger.debug(f"[API CONTENT] '{response}'")
                 
-                # Clean up any reasoning artifacts
+                # Clean up any reasoning artifacts (common to both providers)
                 if "<think>" in response:
                     if "</think>" in response:
                         response = response.split("</think>")[-1].strip()
@@ -124,18 +154,23 @@ class ReasoningLayer:
                 
                 return response.strip() if response else None
             else:
-                logger.debug("[API RESPONSE] No choices in response")
+                logger.debug(f"[API RESPONSE] No choices in response from {self.provider}")
                 return None
                 
         except Exception as e:
-            logger.error(f"Perplexity API call failed: {resp.text if resp else 'No response'}")
+            logger.error(f"{self.provider.title()} API call failed: {resp.text if resp else 'No response'}")
             return None
 
+    # Legacy method for backward compatibility
+    def _perplexity_generate(self, prompt: str, max_new_tokens=60) -> str:
+        """Legacy method - use _api_generate for better provider support."""
+        return self._api_generate(prompt, max_new_tokens)
+
     def _model_generate(self, task: str, text: str, max_new_tokens=60) -> Optional[str]:
-        logger.debug(f"[MODEL GENERATE] Task: '{task}' | Text: '{text[:50]}...' | Tokens: {max_new_tokens}")
+        logger.debug(f"[MODEL GENERATE] Provider: {self.provider}, Task: '{task}' | Text: '{text[:50]}...' | Tokens: {max_new_tokens}")
         
         try:
-            result = self._perplexity_generate(text, max_new_tokens)
+            result = self._api_generate(text, max_new_tokens)
             
             if result:
                 # Clean result - take only the direct answer
@@ -146,82 +181,109 @@ class ReasoningLayer:
                 else:
                     return None
             else:
-                logger.debug("[MODEL RESULT] No result from API")
+                logger.debug(f"[MODEL RESULT] No result from {self.provider} API")
                 return None
                 
         except Exception as e:
-            logger.warning(f"Generation failed ({e}); falling back")
+            logger.warning(f"Generation failed with {self.provider} ({e}); falling back")
             return None
 
-    def _clean_input(self, text: str) -> str:
-        logger.debug(f"[CLEAN START] Raw: '{text}'")
+    def _process_input_combined(self, text: str, inner_speech_present: bool = False) -> tuple[str, str]:
+        """Optimized method that combines cleaning and reasoning into a single API call."""
+        logger.debug(f"[COMBINED PROCESSING START] Raw: '{text}' | inner_speech={inner_speech_present}")
         
-        # Ultra-specific prompt: demand ONLY the corrected text
-        prompt = f"Rewrite this text with proper grammar and spelling. Output ONLY the corrected text, nothing else:\n\n{text}\n\nCorrected:"
-        out = self._model_generate("", prompt, 40)
-        
-        if out and len(out) > 3:
-            # Extract only the corrected part - remove any explanatory text
-            lines = out.split('\n')
-            for line in lines:
-                line = line.strip()
-                if line and not line.startswith(("The", "This", "Corrected", "Fixed", "Output")):
-                    logger.debug(f"[CLEAN SUCCESS] Model result: '{line}'")
-                    return line
-            
-            # If no clean line found, take first line
-            if lines[0].strip():
-                logger.debug(f"[CLEAN SUCCESS] First line: '{lines[0].strip()}'")
-                return lines[0].strip()
-        
-        fallback = _heuristic_clean(text)
-        logger.debug(f"[CLEAN FALLBACK] Using heuristic: '{fallback}'")
-        return fallback
-
-    def _reason_input(self, cleaned: str, inner_speech_present: bool = False) -> str:
-        # print(f"[REASON START] Cleaned: '{cleaned}' | inner_speech={inner_speech_present}")
+        # Determine reasoning instruction based on inner speech context
         if inner_speech_present:
-            base_instruction = (
-                "You are examining an internally generated reflective (inner speech) thought. "
+            reasoning_instruction = (
                 "Infer and articulate the underlying self-directed cognitive intent driving this inner narration. "
-                "Respond with ONE concise present-tense meta-cognitive sentence (no second-person, no quotes, no prefacing like 'The intent is')."
+                "Provide ONE concise present-tense meta-cognitive sentence (no second-person, no quotes, no prefacing like 'The intent is')."
             )
         else:
-            base_instruction = (
+            reasoning_instruction = (
                 "What does this external speaker want or intend? Provide ONE concise present-tense sentence summarizing their intent (no extra commentary)."
             )
-        prompt = f"{base_instruction}\n\nContent:\n{cleaned}\n\nIntent:"  # unified structure
-        out = self._model_generate("", prompt, 30)
-        if out and len(out) > 3:
-            lines = out.split('\n')
+        
+        # Combined prompt for both cleaning and reasoning
+        prompt = f"""Perform two tasks on this text:
+
+1. CLEANING: Rewrite the text with proper grammar and spelling. Output only the corrected text.
+2. REASONING: {reasoning_instruction}
+
+Text to process:
+{text}
+
+Respond in this exact format:
+CLEANED: [corrected text here]
+INTENT: [intent analysis here]"""
+        
+        out = self._model_generate("", prompt, 80)
+        
+        if out and len(out) > 10:
+            # Parse the structured response
+            lines = out.strip().split('\n')
+            cleaned_text = ""
+            reasoned_text = ""
+            
             for line in lines:
-                line = line.strip().rstrip('.')
-                if not line:
-                    continue
+                line = line.strip()
+                if line.startswith("CLEANED:"):
+                    cleaned_text = line.replace("CLEANED:", "").strip()
+                elif line.startswith("INTENT:"):
+                    reasoned_text = line.replace("INTENT:", "").strip()
+            
+            # Fallback parsing if structured format not followed
+            if not cleaned_text or not reasoned_text:
+                logger.debug("[COMBINED] Structured format not followed, using fallback parsing")
+                text_parts = out.split('\n', 1)
+                if len(text_parts) >= 2:
+                    cleaned_text = text_parts[0].strip()
+                    reasoned_text = text_parts[1].strip()
+                else:
+                    cleaned_text = out.strip()
+                    reasoned_text = out.strip()
+            
+            # Clean up the results
+            if cleaned_text:
+                # Remove any prefixes from cleaned text
+                for prefix in ["CLEANED:", "Corrected:", "Fixed:", "Output:"]:
+                    if cleaned_text.startswith(prefix):
+                        cleaned_text = cleaned_text.replace(prefix, "").strip()
+                
+            if reasoned_text:
+                # Clean up reasoning result
+                reasoned_text = reasoned_text.rstrip('.')
                 # Strip leading generic prefixes
-                lowered = line.lower()
+                lowered = reasoned_text.lower()
                 if any(lowered.startswith(prefix) for prefix in ["the intent is", "intent:", "it is", "this is"]):
-                    # remove first word segment after colon/verb
-                    parts = line.split(':', 1)
+                    parts = reasoned_text.split(':', 1)
                     if len(parts) == 2 and parts[1].strip():
-                        line = parts[1].strip()
-                sentence = line.split('.')[0].strip() + '.'
-                logger.debug(f"[REASON SUCCESS] Model result: '{sentence}'")
-                return sentence
-            if lines and lines[0].strip():
-                sentence = lines[0].strip().split('.')[0] + '.'
-                logger.debug(f"[REASON SUCCESS] First sentence fallback: '{sentence}'")
-                return sentence
-        fallback = _heuristic_reasoned(cleaned)
-        logger.debug(f"[REASON FALLBACK] Using heuristic: '{fallback}'")
-        return fallback
+                        reasoned_text = parts[1].strip()
+                reasoned_text = reasoned_text.split('.')[0].strip() + '.'
+            
+            if cleaned_text and reasoned_text:
+                logger.debug(f"[COMBINED SUCCESS] Cleaned: '{cleaned_text}' | Intent: '{reasoned_text}'")
+                return cleaned_text, reasoned_text
+        
+        # Fallback to heuristic methods if API call fails
+        logger.debug("[COMBINED FALLBACK] Using heuristic methods")
+        cleaned_fallback = _heuristic_clean(text)
+        reasoned_fallback = _heuristic_reasoned(cleaned_fallback)
+        return cleaned_fallback, reasoned_fallback
+
+    def _clean_input(self, text: str) -> str:
+        """Legacy method - use _process_input_combined for better performance."""
+        cleaned, _ = self._process_input_combined(text, False)
+        return cleaned
+
+    def _reason_input(self, cleaned: str, inner_speech_present: bool = False) -> str:
+        """Legacy method - use _process_input_combined for better performance."""
+        _, reasoned = self._process_input_combined(cleaned, inner_speech_present)
+        return reasoned
 
     def build_prompt(self, raw: str, gws_bundle: Dict[str, Any]) -> ReasoningResult:
-        cleaned = self._clean_input(raw)
-        # print(f"✨ Cleaned: '{cleaned}'")
-
+        # OPTIMIZED: Use combined processing to reduce API calls by 50%
         inner_present = bool(gws_bundle.get("inner_speech"))
-        reasoned = self._reason_input(cleaned, inner_speech_present=inner_present)
+        cleaned, reasoned = self._process_input_combined(raw, inner_present)
         
         scene_description = gws_bundle.get("scene_description", "(no scene description)")
         self_model = gws_bundle.get("self_model", {})

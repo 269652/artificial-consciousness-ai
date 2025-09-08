@@ -530,7 +530,7 @@ class DefaultModeNetwork:
         
         vs_analysis = bundle.get('ventral_striatum', {})
         top_thought = vs_analysis.get('top_thought', {})
-        overall_score = top_thought.get('overall_score', 0.5)
+        overall_score = top_thought.get('overall_score', 0.5) if top_thought else 0.5
         
         # Base release signals
         signals = {

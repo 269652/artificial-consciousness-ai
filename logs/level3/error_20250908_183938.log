@@ -1,0 +1,8 @@
+2025-09-08 18:42:49,654 | aci.level3.error | ERROR | Failed to save episodic memory: expected 512 dimensions, not 384
+
+2025-09-08 18:42:53,623 | aci.level3.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'
+2025-09-08 18:42:53,815 | aci.level3.error | ERROR | Failed to save memory graph to persistent storage: can't adapt type 'numpy.float32'
+2025-09-08 18:43:14,392 | aci.level3.error | ERROR | Failed to save episodic memory: expected 512 dimensions, not 384
+
+2025-09-08 18:43:52,205 | aci.level3.error | ERROR | Failed to save episodic memory: expected 512 dimensions, not 384
+

@@ -16,7 +16,6 @@ from src.memory.persistent_memory import get_memory_manager
 from src.memory.knowledge_extractor import get_knowledge_extractor
 import time
 import random
-import requests
 import uuid
 
 # Initialize logging and memory systems
@@ -32,10 +31,15 @@ except Exception as e:
     memory_manager = None
     knowledge_extractor = None
 
-# Perplexity API key from env
-PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY")
-if not PERPLEXITY_API_KEY:
-    raise ValueError("PERPLEXITY_API_KEY not set")
+# Initialize ReasoningLayer for personality responses
+try:
+    from src.config.reasoning_config import create_reasoning_layer
+    personality_reasoner = create_reasoning_layer()
+    print(f"Personality reasoner initialized with {personality_reasoner.provider}")
+except ImportError:
+    from src.modules.ReasoningLayer import ReasoningLayer
+    personality_reasoner = ReasoningLayer()
+    print("Personality reasoner initialized with default Perplexity")
 
 # Personalities
 PERSONALITIES = {
@@ -69,21 +73,21 @@ class SeedExperience:
             # Load recent episodic memories
             episodes = memory_manager.load_episodic_memories(limit=5)
             if episodes:
-                aci_logger.level1("INFO", "seed_experience", "Loaded existing episodic memories",
+                aci_logger.level1(LogLevel.INFO, "seed_experience", "Loaded existing episodic memories",
                                  count=len(episodes))
                 print(f"📚 Loaded {len(episodes)} existing episodic memories")
 
             # Load recent narrative memories
             narratives = memory_manager.load_narrative_memories(limit=3)
             if narratives:
-                aci_logger.level1("INFO", "seed_experience", "Loaded existing narrative memories",
+                aci_logger.level1(LogLevel.INFO, "seed_experience", "Loaded existing narrative memories",
                                  count=len(narratives))
                 print(f"📖 Loaded {len(narratives)} existing narrative memories")
 
             # Load knowledge graph
             nodes, edges = memory_manager.load_knowledge_graph()
             if nodes or edges:
-                aci_logger.level1("INFO", "seed_experience", "Loaded existing knowledge graph",
+                aci_logger.level1(LogLevel.INFO, "seed_experience", "Loaded existing knowledge graph",
                                  nodes=len(nodes), edges=len(edges))
                 print(f"🕸️  Loaded knowledge graph with {len(nodes)} nodes and {len(edges)} edges")
 
@@ -101,29 +105,28 @@ class SeedExperience:
         return f"Time: {self.world_time:.1f} ({time_of_day}), Sounds: {sounds}"
 
     def generate_personality_response(self, personality, user_input):
+        """Generate personality response using ReasoningLayer for consistency."""
         prompt = f"{PERSONALITIES[personality]}\nUser: {user_input}\n{personality}:"
-        response = self.call_perplexity_api(prompt)
-        return response
-
-    def call_perplexity_api(self, prompt):
-        url = "https://api.perplexity.ai/chat/completions"
-        headers = {
-            "Authorization": f"Bearer {PERPLEXITY_API_KEY}",
-            "Content-Type": "application/json"
-        }
-        data = {
-            "model": "sonar-pro",
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 100
-        }
-        response = requests.post(url, headers=headers, json=data)
-        if response.status_code == 200:
-            return response.json()["choices"][0]["message"]["content"]
-        else:
-            return "I'm sorry, I couldn't respond right now."
+        
+        # Use ReasoningLayer's unified API generation
+        response = personality_reasoner._api_generate(prompt, max_new_tokens=100)
+        
+        if response:
+            # Clean the response to remove any prefixes
+            lines = response.split('\n')
+            for line in lines:
+                line = line.strip()
+                if line and not line.startswith((personality + ":", "Response:")):
+                    return line
+            # Fallback to first line if no clean line found
+            if lines and lines[0].strip():
+                return lines[0].strip()
+        
+        # Fallback response
+        return "I'm sorry, I couldn't respond right now."
 
     def run_simulation(self, steps=100):
-        aci_logger.level1("INFO", "seed_experience", "Starting simulation",
+        aci_logger.level1(LogLevel.INFO, "seed_experience", "Starting simulation",
                          steps=steps, session_id=self.session_id)
 
         print("🧠 Starting ACI SeedExperience simulation with persistent memory...")
@@ -141,7 +144,7 @@ class SeedExperience:
             self.step_count += 1
             world_desc = self.simulate_world_change()
 
-            aci_logger.level2("INFO", "seed_experience", "Simulation step started",
+            aci_logger.level2(LogLevel.INFO, "seed_experience", "Simulation step started",
                              step=self.step_count, phase=current_phase)
 
             # Fake sensory input for Associative Cortex
@@ -205,7 +208,7 @@ class SeedExperience:
                     phase_counter = 0
                     personality_index += 1
 
-                    aci_logger.level1("INFO", "seed_experience", "Phase transition: conversation -> mind_wander")
+                    aci_logger.level1(LogLevel.INFO, "seed_experience", "Phase transition: conversation -> mind_wander")
                     print("[PHASE] Switching to mind wandering...")
 
             elif current_phase == "mind_wander":
@@ -215,7 +218,7 @@ class SeedExperience:
                     current_phase = "conversation"
                     phase_counter = 0
 
-                    aci_logger.level1("INFO", "seed_experience", "Phase transition: mind_wander -> conversation")
+                    aci_logger.level1(LogLevel.INFO, "seed_experience", "Phase transition: mind_wander -> conversation")
                     print("[PHASE] Switching to conversation...")
 
             # Handle conversation if personality is present
@@ -310,7 +313,7 @@ class SeedExperience:
                     print(f"[EXECUTED] {ex}")
 
             # Log to our advanced logging system
-            aci_logger.level2("INFO", "seed_experience", "Step completed",
+            aci_logger.level2(LogLevel.INFO, "seed_experience", "Step completed",
                              step=self.step_count, phase=current_phase,
                              has_thought=bool(current_thought),
                              has_action=bool(selected_action))
@@ -326,13 +329,13 @@ class SeedExperience:
         # Final knowledge extraction and summary
         try:
             knowledge_result = knowledge_extractor.extract_and_store_knowledge()
-            aci_logger.level1("INFO", "seed_experience", "Final knowledge extraction completed",
+            aci_logger.level1(LogLevel.INFO, "seed_experience", "Final knowledge extraction completed",
                              **knowledge_result)
         except Exception as e:
             aci_logger.error(f"Final knowledge extraction failed: {e}",
                            component="seed_experience")
 
-        aci_logger.level1("INFO", "seed_experience", "Simulation completed",
+        aci_logger.level1(LogLevel.INFO, "seed_experience", "Simulation completed",
                          total_steps=self.step_count, session_id=self.session_id)
         print("🎉 Simulation complete. All memories have been persisted to database.")
         print("📊 Check the logs/ directory for detailed activity logs")
