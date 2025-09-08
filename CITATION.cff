@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: "Always-On Consciousness-Inspired AI (ACI): Conceptual Architecture and Algorithmic Blueprint"
+message: "If you use this work, please cite it as below."
+type: software
+authors:
+  - family-names: Roessler
+    given-names: Moritz
+    email: me@javascript.moe
+identifiers: []
+repository-code: ""
+url: ""
+abstract: >
+  A neuro-inspired, memory-centric architecture for an always-on,
+  consciousness-inspired agent. The system centers on a multidimensional
+  memory graph and a continuous Default Mode Network loop, with explicit
+  modules for parsing (MDN), task dispatch (PFC-1), associative expansion
+  (HC), valuation (VS), selection (PFC-2), reward tagging (NAcc), and
+  neuromodulator-gated control. It targets grounded operation (e.g., Isaac
+  Sim) and emphasizes ethical exclusion of phenomenological feeling
+  simulation.
+keywords:
+  - artificial consciousness
+  - default mode network
+  - hippocampus
+  - neuromodulation
+  - memory graph
+  - symbolic abstraction
+  - RSSM
+  - agent architectures
+  - introspection
+license: "MIT"
+version: "0.1.0"
+date-released: "2025-08-23"
+preferred-citation:
+  type: software
+  title: "Always-On Consciousness-Inspired AI (ACI)"
+  authors:
+    - family-names: Roessler
+      given-names: Moritz
+      email: me@javascript.moe
+  version: "0.1.0"
+  date-released: "2025-08-23"
