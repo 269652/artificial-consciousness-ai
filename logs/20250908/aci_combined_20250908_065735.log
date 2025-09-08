@@ -1,0 +1,19 @@
+2025-09-08 06:57:35,674 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 06:57:35,692 | aci.level2.info | INFO | Memory consolidator initialized
+2025-09-08 06:57:43,410 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 06:57:43,584 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 06:58:33,590 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:58:34,450 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:58:35,423 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:58:36,469 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:58:42,573 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 06:58:42,627 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 06:58:43,190 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 06:58:43,197 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 06:58:43,237 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 06:58:43,242 | aci.level1.info | INFO | Starting simulation
+2025-09-08 06:58:43,247 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:58:43,254 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 06:58:43,260 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 06:58:43,265 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 06:58:43,275 | aci.level2.info | INFO | PROCESS: Sensory input received

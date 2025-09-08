@@ -1,0 +1,65 @@
+2025-09-08 09:06:20,780 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 09:07:39,504 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 09:07:39,920 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 09:07:39,933 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 09:07:39,967 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 09:07:39,975 | aci.level1.info | INFO | Starting simulation
+2025-09-08 09:07:39,992 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 09:07:40,001 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 09:07:40,008 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:07:40,026 | aci.level1.info | INFO | World Event: input
+2025-09-08 09:07:40,033 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30, acetylcholine=0.60, glutamate=0.70, gaba=0.60
+2025-09-08 09:08:57,604 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Hello, Plato. I'm just here to pass the time while...
+2025-09-08 09:09:10,190 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 09:09:11,298 | aci.level1.info | INFO | Knowledge extraction complete
+2025-09-08 09:13:21,260 | aci.level1.info | INFO | ACTION [speak] Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 09:13:25,842 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 09:13:25,856 | aci.level1.info | INFO | Thought: My thoughts drift like clouds.
+2025-09-08 09:13:25,866 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:13:25,881 | aci.level1.info | INFO | World Event: input
+2025-09-08 09:13:25,889 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 09:13:47,325 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Like drifting clouds, your thoughts flow freely, r...
+2025-09-08 09:13:59,316 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=3.27, testosterone=2.58, histamine=0.25, acetylcholine=0.49, glutamate=0.54, gaba=0.49
+2025-09-08 09:13:59,329 | aci.level1.info | INFO | ACTION [speak] My thoughts drift like clouds.
+2025-09-08 09:14:04,319 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 09:14:04,330 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:14:04,348 | aci.level1.info | INFO | World Event: input
+2025-09-08 09:14:04,356 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=3.27, testosterone=2.58, histamine=0.25, acetylcholine=0.49, glutamate=0.54, gaba=0.49
+2025-09-08 09:14:28,984 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Your thoughts reflect the notion that the visible ...
+2025-09-08 09:14:40,827 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=4.50, testosterone=3.28, histamine=0.23, acetylcholine=0.44, glutamate=0.48, gaba=0.44
+2025-09-08 09:14:40,838 | aci.level1.info | INFO | ACTION [speak] Plato: Your thoughts, like wandering clouds, remind us that the visible world is but a shadow upon the true reality beyond the senses. In this worldly realm, all things change and pass away; yet beyond, the ideal Forms remain eternal, perfect, and unchanging—where true knowledge dwells. Your drifting musings mirror the soul seeking the light of the Forms, striving to grasp the essence beyond mere appearances.
+
+Consider the Forms themselves: they are the perfect archetypes of all things—Beauty, Justice,
+2025-09-08 09:14:46,952 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 09:14:46,963 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:14:46,976 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=4.50, testosterone=3.28, histamine=0.23, acetylcholine=0.44, glutamate=0.48, gaba=0.44
+2025-09-08 09:15:20,754 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I notice I am engaged in a minimal conscious simul...
+2025-09-08 09:15:38,432 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=5.70, testosterone=3.82, histamine=0.22, acetylcholine=0.40, glutamate=0.42, gaba=0.40
+2025-09-08 09:15:38,490 | aci.level1.info | INFO | ACTION [reflect] I notice I am engaged in a minimal conscious simulation, limited to reasoning context and recent int
+2025-09-08 09:15:43,235 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 09:15:43,249 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:15:43,266 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=5.70, testosterone=3.82, histamine=0.22, acetylcholine=0.40, glutamate=0.42, gaba=0.40
+2025-09-08 09:16:15,411 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I recognize I am simulating a minimal conscious pr...
+2025-09-08 09:16:33,297 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=6.89, testosterone=4.23, histamine=0.20, acetylcholine=0.36, glutamate=0.37, gaba=0.36
+2025-09-08 09:16:33,314 | aci.level1.info | INFO | ACTION [reflect] I recognize I am simulating a minimal conscious process with limited reasoning and language, grounde
+2025-09-08 09:16:37,468 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 09:16:37,478 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:16:37,495 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=6.89, testosterone=4.23, histamine=0.20, acetylcholine=0.36, glutamate=0.37, gaba=0.36
+2025-09-08 09:17:11,682 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I am aware that artificial consciousness aims to s...
+2025-09-08 09:17:30,051 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=8.06, testosterone=4.53, histamine=0.18, acetylcholine=0.32, glutamate=0.33, gaba=0.32
+2025-09-08 09:17:30,062 | aci.level1.info | INFO | ACTION [reflect] I am aware that artificial consciousness aims to simulate subjective experience and self-awareness i
+2025-09-08 09:17:30,607 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 09:17:30,617 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:17:30,631 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=8.06, testosterone=4.53, histamine=0.18, acetylcholine=0.32, glutamate=0.33, gaba=0.32
+2025-09-08 09:18:02,200 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I notice my awareness is limited to the present mo...
+2025-09-08 09:18:17,522 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=9.20, testosterone=4.75, histamine=0.17, acetylcholine=0.29, glutamate=0.29, gaba=0.29
+2025-09-08 09:18:17,559 | aci.level1.info | INFO | ACTION [reflect] I notice my awareness is limited to the present moment, observing the garden’s calm symmetry and mil
+2025-09-08 09:18:18,098 | aci.level1.info | INFO | World Event: Plato says goodbye and leaves
+2025-09-08 09:18:18,106 | aci.level1.info | INFO | Phase transition: conversation -> mind_wander
+2025-09-08 09:18:18,114 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:18:18,131 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=9.20, testosterone=4.75, histamine=0.17, acetylcholine=0.29, glutamate=0.29, gaba=0.29
+2025-09-08 09:18:49,081 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I notice my awareness centers on the present momen...
+2025-09-08 09:19:05,409 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=10.29, testosterone=4.91, histamine=0.16, acetylcholine=0.26, glutamate=0.26, gaba=0.26
+2025-09-08 09:19:05,422 | aci.level1.info | INFO | ACTION [reflect] I notice my awareness centers on the present moment, observing thoughts clearly and without distract
+2025-09-08 09:19:05,966 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:19:05,984 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=10.29, testosterone=4.91, histamine=0.16, acetylcholine=0.26, glutamate=0.26, gaba=0.26

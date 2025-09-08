@@ -1,0 +1,5 @@
+2025-09-08 09:25:34,955 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30, acetylcholine=0.60, glutamate=0.70, gaba=0.60
+2025-09-08 09:28:11,619 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 09:28:13,129 | aci.level3.info | INFO | Layer 1 GC completed
+2025-09-08 09:32:46,048 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 09:32:50,570 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54

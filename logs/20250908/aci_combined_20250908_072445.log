@@ -1,0 +1,55 @@
+2025-09-08 07:24:46,252 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 07:24:46,266 | aci.level2.info | INFO | Memory consolidator initialized
+2025-09-08 07:24:47,026 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 07:24:47,057 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 07:25:38,958 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:25:39,995 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:25:41,048 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:25:42,206 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:25:49,858 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 07:25:49,900 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 07:25:49,917 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 07:25:49,934 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 07:25:49,938 | aci.level1.info | INFO | Starting simulation
+2025-09-08 07:25:49,941 | aci.level2.info | INFO | Simulation step started
+2025-09-08 07:25:49,947 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 07:25:49,951 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 07:25:49,957 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:25:49,964 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 07:25:49,968 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:25:49,971 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30, acetylcholine=0.60, glutamate=0.70, gaba=0.60
+2025-09-08 07:25:49,982 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 07:25:57,741 | aci.level2.info | INFO | PROCESS: Generated thought: Plato: Hello, I'm waiting for the bus. What brings you here?...
+2025-09-08 07:25:58,011 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 07:26:08,180 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 07:26:08,186 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 07:26:08,189 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Hello, I’m just here waiting for the bus too. Are ...
+2025-09-08 07:26:19,435 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 07:26:19,441 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 07:26:19,522 | aci.level2.info | INFO | Starting pattern analysis
+2025-09-08 07:26:19,529 | aci.level2.info | INFO | Pattern analysis complete
+2025-09-08 07:26:19,533 | aci.level2.info | INFO | Building knowledge graph
+2025-09-08 07:26:19,537 | aci.level2.info | INFO | Knowledge graph built
+2025-09-08 07:26:19,540 | aci.level1.info | INFO | Knowledge extraction complete
+2025-09-08 07:26:19,548 | aci.level2.info | INFO | MEMORY [knowledge_extraction] Periodic extraction completed
+2025-09-08 07:26:19,552 | aci.level3.info | INFO | Layer 1 GC completed
+2025-09-08 07:26:19,555 | aci.level2.info | INFO | Memory consolidate: layer1_gc
+2025-09-08 07:26:19,558 | aci.level2.info | INFO | Performance: memory_consolidation_duration = 0.0033228397369384766 seconds
+2025-09-08 07:30:29,050 | aci.level2.info | INFO | Memory save: memory_graph
+2025-09-08 07:30:29,055 | aci.level1.info | INFO | ACTION [speak] Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 07:30:29,059 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 07:30:29,061 | aci.level2.info | INFO | Performance: dmn_step_duration = 279.10422372817993 seconds
+2025-09-08 07:30:29,068 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:30:29,074 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:30:29,079 | aci.level2.info | INFO | Step completed
+2025-09-08 07:30:29,585 | aci.level2.info | INFO | Simulation step started
+2025-09-08 07:30:32,989 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 07:30:32,994 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:30:32,998 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 07:30:33,003 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 07:30:36,571 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 07:30:54,046 | aci.level2.info | INFO | PROCESS: Generated thought: I am aware only of the current context and my minimal conscious simulation state. I focus on the pre...
+2025-09-08 07:30:54,405 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 07:31:06,424 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 07:31:06,431 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 07:31:06,437 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I am aware only of the current context and my mini...

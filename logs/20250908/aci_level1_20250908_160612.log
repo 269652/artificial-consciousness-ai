@@ -1,0 +1,12 @@
+2025-09-08 16:06:12,617 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 16:07:50,371 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 16:07:50,770 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 16:07:50,780 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 16:07:50,794 | aci.level1.info | INFO | Loaded existing knowledge graph
+2025-09-08 16:07:50,816 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 16:07:50,825 | aci.level1.info | INFO | Starting simulation
+2025-09-08 16:07:50,839 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 16:07:50,875 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 16:07:50,886 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 16:07:50,903 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30, acetylcholine=0.60, glutamate=0.70, gaba=0.60
+2025-09-08 16:08:43,570 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I notice the calm clarity of this moment, sensing ...

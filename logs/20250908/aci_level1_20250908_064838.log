@@ -1,0 +1,5 @@
+2025-09-08 06:49:27,810 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 06:49:28,105 | aci.level1.error | ERROR | Failed memory consolidation: 'MemoryConsolidator' object has no attribute 'trigger_layer1_gc'
+2025-09-08 06:49:28,478 | aci.level1.info | INFO | Processing input
+2025-09-08 06:49:41,104 | aci.level1.info | INFO | Thought: Hello! How are you feeling today?
+2025-09-08 06:50:29,491 | aci.level1.info | INFO | Action: speak - I'm feeling balanced and alert, ready to engage with you in this fresh, quiet morning. How can I ass...

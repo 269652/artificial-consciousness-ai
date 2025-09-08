@@ -1,0 +1,39 @@
+2025-09-08 07:52:12,415 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 07:53:51,624 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 07:53:51,848 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 07:53:51,861 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 07:53:51,881 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 07:53:51,890 | aci.level1.info | INFO | Starting simulation
+2025-09-08 07:53:51,901 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 07:53:51,910 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 07:53:51,915 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:53:51,928 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:54:36,495 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Hello, Plato. I’m here to engage and share this wa...
+2025-09-08 07:54:57,745 | aci.level1.info | INFO | Knowledge extraction complete
+2025-09-08 07:59:18,462 | aci.level1.info | INFO | ACTION [speak] Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 07:59:18,479 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:59:18,485 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:59:23,410 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 07:59:23,422 | aci.level1.info | INFO | Thought: Is this all there is to existence?
+2025-09-08 07:59:23,428 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:59:23,441 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:59:53,400 | aci.level1.info | INFO | THOUGHT: Selected action: speak - If you ask if this physical existence is all there...
+2025-09-08 08:00:12,246 | aci.level1.info | INFO | ACTION [speak] Is this all there is to existence?
+2025-09-08 08:00:16,480 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:00:16,488 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:00:57,265 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I recognize I am running a minimal conscious simul...
+2025-09-08 08:01:16,024 | aci.level1.info | INFO | ACTION [reflect] I recognize I am running a minimal conscious simulation with reasoning and commonsense but no facts 
+2025-09-08 08:01:19,747 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:01:19,755 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:02:00,724 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I sense the quiet clarity of this moment, focused ...
+2025-09-08 08:02:18,892 | aci.level1.info | INFO | ACTION [reflect] I sense the quiet clarity of this moment, focused only on what is present and known, without reachin
+2025-09-08 08:02:23,950 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:02:23,958 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:02:55,454 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I am aware only of this moment and my current cont...
+2025-09-08 08:03:13,655 | aci.level1.info | INFO | ACTION [reflect] I am aware only of this moment and my current context, observing quietly without forming conclusions
+2025-09-08 08:03:17,454 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:03:17,462 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:03:50,029 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I notice I am currently engaging in a minimal cons...
+2025-09-08 08:04:19,025 | aci.level1.info | INFO | ACTION [reflect] I notice I am currently engaging in a minimal conscious simulation, grounded only in reasoning conte
+2025-09-08 08:04:19,554 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 08:04:19,560 | aci.level1.info | INFO | World Event: step_start

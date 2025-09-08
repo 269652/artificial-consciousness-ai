@@ -1,0 +1,17 @@
+2025-09-08 07:24:46,252 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 07:25:49,900 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 07:25:49,917 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 07:25:49,934 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 07:25:49,938 | aci.level1.info | INFO | Starting simulation
+2025-09-08 07:25:49,947 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 07:25:49,951 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 07:25:49,957 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:25:49,968 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:26:08,189 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Hello, I’m just here waiting for the bus too. Are ...
+2025-09-08 07:26:19,540 | aci.level1.info | INFO | Knowledge extraction complete
+2025-09-08 07:30:29,055 | aci.level1.info | INFO | ACTION [speak] Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 07:30:29,068 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:30:29,074 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:30:32,989 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 07:30:32,994 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:31:06,437 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I am aware only of the current context and my mini...

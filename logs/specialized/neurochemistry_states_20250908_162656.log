@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-09-08T16:26:57.298315",
+  "nt_levels": {
+    "dopamine": 0.6,
+    "serotonin": 0.7,
+    "norepinephrine": 0.5,
+    "oxytocin": 0.4,
+    "testosterone": 0.5,
+    "histamine": 0.3
+  },
+  "change_trigger": "test_simulation",
+  "component": "test",
+  "session_id": "20250908_162656",
+  "step": 1
+}
+---
+{
+  "timestamp": "2025-09-08T16:26:58.468888",
+  "nt_levels": {
+    "dopamine": 0.0,
+    "serotonin": 0.0,
+    "norepinephrine": 0.0,
+    "oxytocin": 10.29,
+    "testosterone": 4.91,
+    "histamine": 0.16
+  },
+  "change_trigger": "cognitive_state_transition",
+  "component": "test",
+  "session_id": "20250908_162656",
+  "step": 2
+}
+---

@@ -1,0 +1,27 @@
+2025-09-08 06:48:38,254 | aci.level2.info | INFO | Memory consolidator initialized
+2025-09-08 06:48:42,245 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 06:48:42,265 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 06:49:18,264 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:49:19,169 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:49:20,143 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:49:21,509 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:49:27,760 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 06:49:27,810 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 06:49:27,827 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_0
+2025-09-08 06:49:27,911 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_1
+2025-09-08 06:49:27,917 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_2
+2025-09-08 06:49:27,921 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_3
+2025-09-08 06:49:27,928 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_4
+2025-09-08 06:49:27,933 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_5
+2025-09-08 06:49:27,938 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_6
+2025-09-08 06:49:27,946 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_7
+2025-09-08 06:49:28,094 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_8
+2025-09-08 06:49:28,099 | aci.level4.debug | DEBUG | Added node to Layer 1: test_node_9
+2025-09-08 06:49:28,105 | aci.level1.error | ERROR | Failed memory consolidation: 'MemoryConsolidator' object has no attribute 'trigger_layer1_gc'
+2025-09-08 06:49:28,116 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:49:28,313 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:49:28,478 | aci.level1.info | INFO | Processing input
+2025-09-08 06:49:32,992 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:49:41,104 | aci.level1.info | INFO | Thought: Hello! How are you feeling today?
+2025-09-08 06:50:20,960 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:50:29,491 | aci.level1.info | INFO | Action: speak - I'm feeling balanced and alert, ready to engage with you in this fresh, quiet morning. How can I ass...

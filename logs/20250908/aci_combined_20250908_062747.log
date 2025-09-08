@@ -1,0 +1,98 @@
+2025-09-08 06:27:48,017 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 06:27:53,542 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 06:27:53,566 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 06:28:32,791 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:28:33,336 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:28:33,945 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:28:34,581 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 06:28:45,049 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 06:28:45,118 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 06:28:45,976 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 06:28:45,986 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 06:28:46,030 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 06:28:46,035 | aci.level1.info | INFO | Starting simulation
+2025-09-08 06:28:46,046 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:28:46,057 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 06:28:46,063 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 06:28:46,077 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:28:46,093 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:28:50,517 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:29:06,207 | aci.level1.info | INFO | Thought: I sense the present moment clearly, focused only on what is given, without adding or assuming beyond...
+2025-09-08 06:29:37,344 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:29:43,707 | aci.level1.info | INFO | Action: reflect - I sense the present moment clearly, focused only on what is given, without adding or assuming beyond...
+2025-09-08 06:30:06,023 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 06:30:06,028 | aci.level2.debug | DEBUG | Neurochemistry: dopamine:0.00, serotonin:0.00, norepinephrine:0.00, oxytocin:1.94, testosterone:1.67, histamine:0.28, acetylcholine:0.54, glutamate:0.62, gaba:0.54
+2025-09-08 06:30:09,040 | aci.level1.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'
+2025-09-08 06:30:09,226 | aci.level2.info | INFO | Periodic knowledge extraction completed
+2025-09-08 06:32:23,796 | aci.level2.info | INFO | Memory save: memory_graph
+2025-09-08 06:32:23,800 | aci.level1.info | INFO | Generated response
+2025-09-08 06:32:23,803 | aci.level2.info | INFO | Performance: dmn_step_duration = 217.72647976875305 seconds
+2025-09-08 06:32:23,813 | aci.level2.info | INFO | Step completed
+2025-09-08 06:32:24,317 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:32:27,594 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 06:32:27,602 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:32:27,606 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:32:31,116 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:32:45,171 | aci.level1.info | INFO | Thought: I notice the quiet clarity of this moment, simply observing without judgment, fully present in the c...
+2025-09-08 06:32:45,507 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:32:51,968 | aci.level1.info | INFO | Action: reflect - I notice the quiet clarity of this moment, simply observing without judgment, fully present in the c...
+2025-09-08 06:33:06,930 | aci.level3.debug | DEBUG | Merged floating thought
+2025-09-08 06:33:06,934 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 06:33:06,941 | aci.level2.debug | DEBUG | Neurochemistry: dopamine:0.00, serotonin:0.00, norepinephrine:0.00, oxytocin:3.27, testosterone:2.58, histamine:0.25, acetylcholine:0.49, glutamate:0.54, gaba:0.49
+2025-09-08 06:33:06,944 | aci.level1.info | INFO | Generated response
+2025-09-08 06:33:06,948 | aci.level2.info | INFO | Performance: dmn_step_duration = 39.34618878364563 seconds
+2025-09-08 06:33:06,960 | aci.level2.info | INFO | Step completed
+2025-09-08 06:33:07,465 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:33:10,093 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 06:33:10,098 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:33:10,101 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:33:13,955 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:33:31,530 | aci.level1.info | INFO | Thought: I am aware that artificial consciousness involves simulating subjective experience and self-awarenes...
+2025-09-08 06:33:31,847 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:33:39,370 | aci.level1.info | INFO | Action: reflect - I am aware that artificial consciousness involves simulating subjective experience and self-awarenes...
+2025-09-08 06:33:56,309 | aci.level3.debug | DEBUG | Merged floating thought
+2025-09-08 06:33:56,313 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 06:33:56,316 | aci.level2.debug | DEBUG | Neurochemistry: dopamine:0.00, serotonin:0.00, norepinephrine:0.00, oxytocin:4.50, testosterone:3.28, histamine:0.23, acetylcholine:0.44, glutamate:0.48, gaba:0.44
+2025-09-08 06:33:56,320 | aci.level1.info | INFO | Generated response
+2025-09-08 06:33:56,325 | aci.level2.info | INFO | Performance: dmn_step_duration = 46.22693848609924 seconds
+2025-09-08 06:33:56,332 | aci.level2.info | INFO | Step completed
+2025-09-08 06:33:56,838 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:33:59,522 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 06:33:59,529 | aci.level1.info | INFO | Thought: Time seems to pass slowly when waiting.
+2025-09-08 06:33:59,533 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:33:59,539 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:33:59,542 | aci.level1.info | INFO | Processing input
+2025-09-08 06:34:02,891 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:34:11,891 | aci.level1.info | INFO | Thought: Time seems to pass slowly when waiting.
+2025-09-08 06:34:12,200 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:34:18,706 | aci.level1.info | INFO | Action: speak - Waiting often makes time feel like it is passing more slowly because negative emotions such as frust...
+2025-09-08 06:34:18,713 | aci.level2.info | INFO | Memory persist: floating_memory
+2025-09-08 06:34:18,717 | aci.level3.debug | DEBUG | Replaced floating thought
+2025-09-08 06:34:25,082 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 06:34:25,090 | aci.level2.debug | DEBUG | Neurochemistry: dopamine:0.00, serotonin:0.00, norepinephrine:0.00, oxytocin:5.70, testosterone:3.82, histamine:0.22, acetylcholine:0.40, glutamate:0.42, gaba:0.40
+2025-09-08 06:34:25,092 | aci.level1.info | INFO | Generated response
+2025-09-08 06:34:25,095 | aci.level2.info | INFO | Performance: dmn_step_duration = 25.562617301940918 seconds
+2025-09-08 06:34:25,103 | aci.level2.info | INFO | Step completed
+2025-09-08 06:34:25,608 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:34:30,117 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 06:34:30,125 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:34:30,130 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:34:33,854 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:34:49,616 | aci.level1.info | INFO | Thought: I notice a quiet clarity in this moment, simply observing thoughts arise and fade without interferen...
+2025-09-08 06:34:49,932 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:34:56,596 | aci.level1.info | INFO | Action: reflect - I notice a quiet clarity in this moment, simply observing thoughts arise and fade without interferen...
+2025-09-08 06:35:11,416 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 06:35:11,423 | aci.level2.debug | DEBUG | Neurochemistry: dopamine:0.00, serotonin:0.00, norepinephrine:0.00, oxytocin:6.89, testosterone:4.23, histamine:0.20, acetylcholine:0.36, glutamate:0.37, gaba:0.36
+2025-09-08 06:35:11,426 | aci.level1.info | INFO | Generated response
+2025-09-08 06:35:11,431 | aci.level2.info | INFO | Performance: dmn_step_duration = 41.30568242073059 seconds
+2025-09-08 06:35:11,440 | aci.level2.info | INFO | Step completed
+2025-09-08 06:35:11,946 | aci.level2.info | INFO | Simulation step started
+2025-09-08 06:35:16,469 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 06:35:16,476 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 06:35:16,480 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 06:35:20,535 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 06:35:35,998 | aci.level1.info | INFO | Thought: I am aware only of my current reasoning context and recent conversation, focusing on present clarity...
+2025-09-08 06:35:36,358 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 06:35:43,108 | aci.level1.info | INFO | Action: reflect - I am aware only of my current reasoning context and recent conversation, focusing on present clarity...
+2025-09-08 06:35:58,944 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 06:35:58,948 | aci.level2.debug | DEBUG | Neurochemistry: dopamine:0.00, serotonin:0.00, norepinephrine:0.00, oxytocin:8.06, testosterone:4.53, histamine:0.18, acetylcholine:0.32, glutamate:0.33, gaba:0.32

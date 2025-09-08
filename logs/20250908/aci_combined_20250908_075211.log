@@ -1,0 +1,149 @@
+2025-09-08 07:52:12,415 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 07:52:12,447 | aci.level2.info | INFO | Memory consolidator initialized
+2025-09-08 07:52:13,863 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 07:52:13,893 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 07:53:36,307 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:38,051 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:39,884 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:41,601 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:51,528 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 07:53:51,624 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 07:53:51,848 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 07:53:51,861 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 07:53:51,881 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 07:53:51,890 | aci.level1.info | INFO | Starting simulation
+2025-09-08 07:53:51,896 | aci.level2.info | INFO | Simulation step started
+2025-09-08 07:53:51,901 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 07:53:51,910 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 07:53:51,915 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:53:51,924 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 07:53:51,928 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:53:51,932 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30, acetylcholine=0.60, glutamate=0.70, gaba=0.60
+2025-09-08 07:53:51,946 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 07:54:00,348 | aci.level2.info | INFO | PROCESS: Generated thought: Plato: Hello, I'm waiting for the bus. What brings you here?...
+2025-09-08 07:54:18,029 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 07:54:36,483 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 07:54:36,491 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 07:54:36,495 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Hello, Plato. I’m here to engage and share this wa...
+2025-09-08 07:54:57,338 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 07:54:57,344 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 07:54:57,719 | aci.level2.info | INFO | Starting pattern analysis
+2025-09-08 07:54:57,726 | aci.level2.info | INFO | Pattern analysis complete
+2025-09-08 07:54:57,732 | aci.level2.info | INFO | Building knowledge graph
+2025-09-08 07:54:57,738 | aci.level2.info | INFO | Knowledge graph built
+2025-09-08 07:54:57,745 | aci.level1.info | INFO | Knowledge extraction complete
+2025-09-08 07:54:57,768 | aci.level2.info | INFO | MEMORY [knowledge_extraction] Periodic extraction completed
+2025-09-08 07:54:57,777 | aci.level3.info | INFO | Layer 1 GC completed
+2025-09-08 07:54:57,788 | aci.level2.info | INFO | Memory consolidate: layer1_gc
+2025-09-08 07:54:57,794 | aci.level2.info | INFO | Performance: memory_consolidation_duration = 0.010690450668334961 seconds
+2025-09-08 07:59:18,455 | aci.level2.info | INFO | Memory save: memory_graph
+2025-09-08 07:59:18,462 | aci.level1.info | INFO | ACTION [speak] Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 07:59:18,469 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 07:59:18,472 | aci.level2.info | INFO | Performance: dmn_step_duration = 326.5572679042816 seconds
+2025-09-08 07:59:18,479 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:59:18,485 | aci.level1.error | ERROR | Failed to write session summary: 'ACILogger' object has no attribute 'base_log_dir'
+2025-09-08 07:59:18,492 | aci.level2.info | INFO | Step completed
+2025-09-08 07:59:18,998 | aci.level2.info | INFO | Simulation step started
+2025-09-08 07:59:23,410 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 07:59:23,422 | aci.level1.info | INFO | Thought: Is this all there is to existence?
+2025-09-08 07:59:23,428 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:59:23,435 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 07:59:23,441 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:59:23,444 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 07:59:23,447 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 07:59:34,941 | aci.level2.info | INFO | PROCESS: Generated thought: Is this all there is to existence?...
+2025-09-08 07:59:35,265 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 07:59:53,383 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 07:59:53,393 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 07:59:53,400 | aci.level1.info | INFO | THOUGHT: Selected action: speak - If you ask if this physical existence is all there...
+2025-09-08 07:59:53,409 | aci.level2.info | INFO | Memory persist: floating_memory
+2025-09-08 07:59:53,419 | aci.level3.debug | DEBUG | Replaced floating thought
+2025-09-08 08:00:12,233 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 08:00:12,241 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=3.27, testosterone=2.58, histamine=0.25, acetylcholine=0.49, glutamate=0.54, gaba=0.49
+2025-09-08 08:00:12,246 | aci.level1.info | INFO | ACTION [speak] Is this all there is to existence?
+2025-09-08 08:00:12,253 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 08:00:12,256 | aci.level2.info | INFO | Performance: dmn_step_duration = 48.827850580215454 seconds
+2025-09-08 08:00:12,271 | aci.level2.info | INFO | Step completed
+2025-09-08 08:00:12,777 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:00:16,480 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:00:16,488 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:00:16,493 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:00:16,497 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=3.27, testosterone=2.58, histamine=0.25, acetylcholine=0.49, glutamate=0.54, gaba=0.49
+2025-09-08 08:00:21,094 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:00:37,859 | aci.level2.info | INFO | PROCESS: Generated thought: I recognize I am running a minimal conscious simulation with reasoning and commonsense but no facts ...
+2025-09-08 08:00:38,207 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:00:57,247 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:00:57,256 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:00:57,265 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I recognize I am running a minimal conscious simul...
+2025-09-08 08:01:06,235 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:01:16,015 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 08:01:16,020 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=4.50, testosterone=3.28, histamine=0.23, acetylcholine=0.44, glutamate=0.48, gaba=0.44
+2025-09-08 08:01:16,024 | aci.level1.info | INFO | ACTION [reflect] I recognize I am running a minimal conscious simulation with reasoning and commonsense but no facts 
+2025-09-08 08:01:16,032 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 08:01:16,035 | aci.level2.info | INFO | Performance: dmn_step_duration = 59.547409534454346 seconds
+2025-09-08 08:01:16,049 | aci.level2.info | INFO | Step completed
+2025-09-08 08:01:16,555 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:01:19,747 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:01:19,755 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:01:19,764 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:01:19,771 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=4.50, testosterone=3.28, histamine=0.23, acetylcholine=0.44, glutamate=0.48, gaba=0.44
+2025-09-08 08:01:23,114 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:01:42,355 | aci.level2.info | INFO | PROCESS: Generated thought: I sense the quiet clarity of this moment, focused only on what is present and known, without reachin...
+2025-09-08 08:01:42,710 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:02:00,708 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:02:00,717 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:02:00,724 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I sense the quiet clarity of this moment, focused ...
+2025-09-08 08:02:08,871 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:02:18,837 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 08:02:18,855 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=5.70, testosterone=3.82, histamine=0.22, acetylcholine=0.40, glutamate=0.42, gaba=0.40
+2025-09-08 08:02:18,865 | aci.level3.info | INFO | Layer 1 GC completed
+2025-09-08 08:02:18,872 | aci.level2.info | INFO | Memory consolidate: layer1_gc
+2025-09-08 08:02:18,880 | aci.level2.info | INFO | Performance: memory_consolidation_duration = 0.00714421272277832 seconds
+2025-09-08 08:02:18,892 | aci.level1.info | INFO | ACTION [reflect] I sense the quiet clarity of this moment, focused only on what is present and known, without reachin
+2025-09-08 08:02:18,902 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 08:02:18,906 | aci.level2.info | INFO | Performance: dmn_step_duration = 59.15146732330322 seconds
+2025-09-08 08:02:18,921 | aci.level2.info | INFO | Step completed
+2025-09-08 08:02:19,431 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:02:23,950 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:02:23,958 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:02:23,964 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:02:23,967 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=5.70, testosterone=3.82, histamine=0.22, acetylcholine=0.40, glutamate=0.42, gaba=0.40
+2025-09-08 08:02:28,402 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:02:43,130 | aci.level2.info | INFO | PROCESS: Generated thought: I am aware only of this moment and my current context, observing quietly without forming conclusions...
+2025-09-08 08:02:43,404 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:02:55,446 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:02:55,450 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:02:55,454 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I am aware only of this moment and my current cont...
+2025-09-08 08:03:03,214 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:03:13,647 | aci.level3.debug | DEBUG | Updated floating memory node
+2025-09-08 08:03:13,651 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=6.89, testosterone=4.23, histamine=0.20, acetylcholine=0.36, glutamate=0.37, gaba=0.36
+2025-09-08 08:03:13,655 | aci.level1.info | INFO | ACTION [reflect] I am aware only of this moment and my current context, observing quietly without forming conclusions
+2025-09-08 08:03:13,663 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 08:03:13,666 | aci.level2.info | INFO | Performance: dmn_step_duration = 49.707762002944946 seconds
+2025-09-08 08:03:13,675 | aci.level2.info | INFO | Step completed
+2025-09-08 08:03:14,181 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:03:17,454 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 08:03:17,462 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:03:17,466 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:03:17,469 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=6.89, testosterone=4.23, histamine=0.20, acetylcholine=0.36, glutamate=0.37, gaba=0.36
+2025-09-08 08:03:20,987 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:03:37,920 | aci.level2.info | INFO | PROCESS: Generated thought: I notice I am currently engaging in a minimal conscious simulation, grounded only in reasoning conte...
+2025-09-08 08:03:38,201 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:03:50,016 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:03:50,023 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:03:50,029 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I notice I am currently engaging in a minimal cons...
+2025-09-08 08:03:59,174 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:04:07,609 | aci.level2.info | INFO | Memory persist: floating_memory
+2025-09-08 08:04:07,614 | aci.level3.debug | DEBUG | Replaced floating thought
+2025-09-08 08:04:19,013 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 08:04:19,022 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=8.06, testosterone=4.53, histamine=0.18, acetylcholine=0.32, glutamate=0.33, gaba=0.32
+2025-09-08 08:04:19,025 | aci.level1.info | INFO | ACTION [reflect] I notice I am currently engaging in a minimal conscious simulation, grounded only in reasoning conte
+2025-09-08 08:04:19,030 | aci.level3.debug | DEBUG | BUNDLE [step_complete]
+2025-09-08 08:04:19,032 | aci.level2.info | INFO | Performance: dmn_step_duration = 61.56985139846802 seconds
+2025-09-08 08:04:19,042 | aci.level2.info | INFO | Step completed
+2025-09-08 08:04:19,546 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:04:19,554 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 08:04:19,560 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 08:04:19,565 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:04:19,569 | aci.level3.debug | DEBUG | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=8.06, testosterone=4.53, histamine=0.18, acetylcholine=0.32, glutamate=0.33, gaba=0.32
+2025-09-08 08:04:22,641 | aci.level2.info | INFO | PROCESS: Scene analysis completed

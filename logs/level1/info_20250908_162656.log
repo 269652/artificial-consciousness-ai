@@ -1,0 +1,5 @@
+2025-09-08 16:26:57,282 | aci.level1.info | INFO | Starting logging test
+2025-09-08 16:26:57,383 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30
+2025-09-08 16:26:57,425 | aci.level1.info | INFO | Autobiographical new_event: I am experiencing my first test simulation with enhanced logging capabilities.
+2025-09-08 16:26:57,461 | aci.level1.info | INFO | Personality personality_update: old_text: I am a basic AI system., new_text: I am a sophisticated consciousness simulation with enhanced logging., change_method: replace, text_length...
+2025-09-08 16:26:58,489 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=10.29, testosterone=4.91, histamine=0.16

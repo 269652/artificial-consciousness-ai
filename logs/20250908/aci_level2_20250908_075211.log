@@ -1,0 +1,84 @@
+2025-09-08 07:52:12,447 | aci.level2.info | INFO | Memory consolidator initialized
+2025-09-08 07:52:13,863 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 07:52:13,893 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 07:53:36,307 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:38,051 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:39,884 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:41,601 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 07:53:51,528 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 07:53:51,896 | aci.level2.info | INFO | Simulation step started
+2025-09-08 07:53:51,924 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 07:53:51,946 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 07:54:00,348 | aci.level2.info | INFO | PROCESS: Generated thought: Plato: Hello, I'm waiting for the bus. What brings you here?...
+2025-09-08 07:54:18,029 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 07:54:36,483 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 07:54:36,491 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 07:54:57,338 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 07:54:57,719 | aci.level2.info | INFO | Starting pattern analysis
+2025-09-08 07:54:57,726 | aci.level2.info | INFO | Pattern analysis complete
+2025-09-08 07:54:57,732 | aci.level2.info | INFO | Building knowledge graph
+2025-09-08 07:54:57,738 | aci.level2.info | INFO | Knowledge graph built
+2025-09-08 07:54:57,768 | aci.level2.info | INFO | MEMORY [knowledge_extraction] Periodic extraction completed
+2025-09-08 07:54:57,788 | aci.level2.info | INFO | Memory consolidate: layer1_gc
+2025-09-08 07:54:57,794 | aci.level2.info | INFO | Performance: memory_consolidation_duration = 0.010690450668334961 seconds
+2025-09-08 07:59:18,455 | aci.level2.info | INFO | Memory save: memory_graph
+2025-09-08 07:59:18,472 | aci.level2.info | INFO | Performance: dmn_step_duration = 326.5572679042816 seconds
+2025-09-08 07:59:18,492 | aci.level2.info | INFO | Step completed
+2025-09-08 07:59:18,998 | aci.level2.info | INFO | Simulation step started
+2025-09-08 07:59:23,435 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 07:59:23,447 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 07:59:34,941 | aci.level2.info | INFO | PROCESS: Generated thought: Is this all there is to existence?...
+2025-09-08 07:59:35,265 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 07:59:53,383 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 07:59:53,393 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 07:59:53,409 | aci.level2.info | INFO | Memory persist: floating_memory
+2025-09-08 08:00:12,233 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 08:00:12,256 | aci.level2.info | INFO | Performance: dmn_step_duration = 48.827850580215454 seconds
+2025-09-08 08:00:12,271 | aci.level2.info | INFO | Step completed
+2025-09-08 08:00:12,777 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:00:16,493 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:00:21,094 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:00:37,859 | aci.level2.info | INFO | PROCESS: Generated thought: I recognize I am running a minimal conscious simulation with reasoning and commonsense but no facts ...
+2025-09-08 08:00:38,207 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:00:57,247 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:00:57,256 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:01:06,235 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:01:16,035 | aci.level2.info | INFO | Performance: dmn_step_duration = 59.547409534454346 seconds
+2025-09-08 08:01:16,049 | aci.level2.info | INFO | Step completed
+2025-09-08 08:01:16,555 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:01:19,764 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:01:23,114 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:01:42,355 | aci.level2.info | INFO | PROCESS: Generated thought: I sense the quiet clarity of this moment, focused only on what is present and known, without reachin...
+2025-09-08 08:01:42,710 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:02:00,708 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:02:00,717 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:02:08,871 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:02:18,872 | aci.level2.info | INFO | Memory consolidate: layer1_gc
+2025-09-08 08:02:18,880 | aci.level2.info | INFO | Performance: memory_consolidation_duration = 0.00714421272277832 seconds
+2025-09-08 08:02:18,906 | aci.level2.info | INFO | Performance: dmn_step_duration = 59.15146732330322 seconds
+2025-09-08 08:02:18,921 | aci.level2.info | INFO | Step completed
+2025-09-08 08:02:19,431 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:02:23,964 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:02:28,402 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:02:43,130 | aci.level2.info | INFO | PROCESS: Generated thought: I am aware only of this moment and my current context, observing quietly without forming conclusions...
+2025-09-08 08:02:43,404 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:02:55,446 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:02:55,450 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:03:03,214 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:03:13,666 | aci.level2.info | INFO | Performance: dmn_step_duration = 49.707762002944946 seconds
+2025-09-08 08:03:13,675 | aci.level2.info | INFO | Step completed
+2025-09-08 08:03:14,181 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:03:17,466 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:03:20,987 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 08:03:37,920 | aci.level2.info | INFO | PROCESS: Generated thought: I notice I am currently engaging in a minimal conscious simulation, grounded only in reasoning conte...
+2025-09-08 08:03:38,201 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 08:03:50,016 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 08:03:50,023 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 08:03:59,174 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 08:04:07,609 | aci.level2.info | INFO | Memory persist: floating_memory
+2025-09-08 08:04:19,013 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 08:04:19,032 | aci.level2.info | INFO | Performance: dmn_step_duration = 61.56985139846802 seconds
+2025-09-08 08:04:19,042 | aci.level2.info | INFO | Step completed
+2025-09-08 08:04:19,546 | aci.level2.info | INFO | Simulation step started
+2025-09-08 08:04:19,565 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 08:04:22,641 | aci.level2.info | INFO | PROCESS: Scene analysis completed

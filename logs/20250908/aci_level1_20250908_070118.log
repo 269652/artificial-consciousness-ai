@@ -1,0 +1,12 @@
+2025-09-08 07:01:18,893 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 07:02:37,799 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 07:02:38,325 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 07:02:38,338 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 07:02:38,375 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 07:02:38,385 | aci.level1.info | INFO | Starting simulation
+2025-09-08 07:02:38,397 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 07:02:38,402 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 07:02:38,409 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:02:38,427 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:04:20,499 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Hello, I’m just here waiting for the bus too. What...
+2025-09-08 07:04:35,322 | aci.level1.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'

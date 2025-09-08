@@ -1,0 +1,22 @@
+2025-09-08 09:24:13,127 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 09:25:33,990 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 09:25:34,742 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 09:25:34,758 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 09:25:34,792 | aci.level1.info | INFO | Loaded existing knowledge graph
+2025-09-08 09:25:34,830 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 09:25:34,842 | aci.level1.info | INFO | Starting simulation
+2025-09-08 09:25:34,876 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 09:25:34,889 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 09:25:34,908 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:25:34,943 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.60, serotonin=0.70, norepinephrine=0.50, oxytocin=0.40, testosterone=0.50, histamine=0.30, acetylcholine=0.60, glutamate=0.70, gaba=0.60
+2025-09-08 09:27:40,938 | aci.level1.info | INFO | THOUGHT: Selected action: reflect - I am aware only of my immediate reasoning context ...
+2025-09-08 09:28:11,611 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54
+2025-09-08 09:28:13,038 | aci.level1.error | ERROR | Failed to extract and store knowledge: duplicate key value violates unique constraint "knowledge_nodes_node_type_label_key"
+DETAIL:  Key (node_type, label)=(entity, My) already exists.
+
+2025-09-08 09:32:46,040 | aci.level1.info | INFO | ACTION [reflect] I am aware only of my immediate reasoning context and recent conversation lines; I do not possess tr
+2025-09-08 09:32:50,510 | aci.level1.info | INFO | World Event: Plato responds in conversation
+2025-09-08 09:32:50,523 | aci.level1.info | INFO | Thought: I should have brought a book.
+2025-09-08 09:32:50,533 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 09:32:50,550 | aci.level1.info | INFO | World Event: input
+2025-09-08 09:32:50,559 | aci.level1.info | INFO | NT_LEVELS: dopamine=0.00, serotonin=0.00, norepinephrine=0.00, oxytocin=1.94, testosterone=1.67, histamine=0.28, acetylcholine=0.54, glutamate=0.62, gaba=0.54

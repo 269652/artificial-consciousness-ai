@@ -1,0 +1,42 @@
+2025-09-08 05:35:10,075 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 05:35:10,075 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 05:35:12,579 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 05:35:12,579 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 05:35:12,595 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 05:35:12,595 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 05:35:33,051 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,051 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,324 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,324 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,587 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,587 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,831 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:33,831 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 05:35:34,267 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 05:35:34,267 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 05:35:34,277 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 05:35:34,277 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 05:35:34,728 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 05:35:34,728 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 05:35:34,737 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 05:35:34,737 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 05:35:34,774 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 05:35:34,774 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 05:35:34,781 | aci.level1.info | INFO | Starting simulation
+2025-09-08 05:35:34,781 | aci.level1.info | INFO | Starting simulation
+2025-09-08 05:35:34,785 | aci.level2.info | INFO | Simulation step started
+2025-09-08 05:35:34,785 | aci.level2.info | INFO | Simulation step started
+2025-09-08 05:35:34,791 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 05:35:34,791 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 05:35:34,796 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 05:35:34,796 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 05:35:34,804 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 05:35:34,804 | aci.level2.info | INFO | Starting DMN step
+2025-09-08 05:35:34,811 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 05:35:34,811 | aci.level3.debug | DEBUG | World step completed
+2025-09-08 05:35:34,813 | aci.level1.info | INFO | Processing input
+2025-09-08 05:35:34,813 | aci.level1.info | INFO | Processing input
+2025-09-08 05:35:34,817 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 05:35:34,817 | aci.level3.debug | DEBUG | Visual cortex processing completed
+2025-09-08 05:35:36,453 | aci.level1.info | INFO | Thought: Plato: Hello, I'm waiting for the bus. What brings you here?
+2025-09-08 05:35:36,453 | aci.level1.info | INFO | Thought: Plato: Hello, I'm waiting for the bus. What brings you here?

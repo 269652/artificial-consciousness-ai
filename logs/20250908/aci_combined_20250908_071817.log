@@ -1,0 +1,1 @@
+2025-09-08 07:18:17,585 | aci.level1.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'

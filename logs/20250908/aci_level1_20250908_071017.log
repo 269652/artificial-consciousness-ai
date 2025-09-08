@@ -1,0 +1,13 @@
+2025-09-08 07:10:17,759 | aci.level1.info | INFO | Initializing SeedExperience simulation
+2025-09-08 07:11:28,325 | aci.level1.info | INFO | Default Mode Network initialized with persistent memory
+2025-09-08 07:11:29,380 | aci.level1.info | INFO | Loaded existing episodic memories
+2025-09-08 07:11:29,391 | aci.level1.info | INFO | Loaded existing narrative memories
+2025-09-08 07:11:29,436 | aci.level1.info | INFO | SeedExperience initialized
+2025-09-08 07:11:29,442 | aci.level1.info | INFO | Starting simulation
+2025-09-08 07:11:29,457 | aci.level1.info | INFO | World Event: A person resembling Plato sits down on the bench
+2025-09-08 07:11:29,469 | aci.level1.info | INFO | World Event: Conversation started with Plato
+2025-09-08 07:11:29,476 | aci.level1.info | INFO | Thought: Time seems to pass slowly when waiting.
+2025-09-08 07:11:29,488 | aci.level1.info | INFO | World Event: step_start
+2025-09-08 07:11:29,586 | aci.level1.info | INFO | World Event: input
+2025-09-08 07:11:53,194 | aci.level1.info | INFO | THOUGHT: Selected action: speak - Yes, when waiting, people often experience time as...
+2025-09-08 07:12:13,527 | aci.level1.error | ERROR | Failed to extract and store knowledge: 'str' object has no attribute 'value'

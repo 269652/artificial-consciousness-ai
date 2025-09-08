@@ -1,0 +1,12 @@
+[
+  {"role": "user", "content": "Hey there!"},
+  {"role": "assistant", "content": "Hello! How can I help you today?"},
+  {"role": "user", "content": "I'm trying to understand how your memory system works."},
+  {"role": "assistant", "content": "Sure. I build graph nodes with embeddings and connect them via similarity and relevance."},
+  {"role": "user", "content": "Cool. Can you remember conversation context?"},
+  {"role": "assistant", "content": "Yes, prior messages become nodes; retrieval uses similarity scoring."},
+  {"role": "user", "content": "How do you link related ideas?"},
+  {"role": "assistant", "content": "I compute cosine similarity on embeddings, tag overlap, and temporal causality."},
+  {"role": "user", "content": "Great, thanks!"},
+  {"role": "assistant", "content": "You're welcome! Let me know if you need more details."}
+]

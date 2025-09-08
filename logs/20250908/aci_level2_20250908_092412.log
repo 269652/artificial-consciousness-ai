@@ -1,0 +1,30 @@
+2025-09-08 09:24:13,166 | aci.level2.info | INFO | Memory consolidator initialized
+2025-09-08 09:24:15,617 | aci.level2.info | INFO | Memory load: episodic_memory
+2025-09-08 09:24:15,709 | aci.level2.info | INFO | Memory load: autobiographical_narrative
+2025-09-08 09:25:16,536 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 09:25:17,843 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 09:25:19,174 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 09:25:21,061 | aci.level2.info | INFO | Memory save: autobiographical_narrative
+2025-09-08 09:25:30,543 | aci.level2.info | INFO | Memory load: memory_graph
+2025-09-08 09:25:34,854 | aci.level2.info | INFO | Simulation step started
+2025-09-08 09:25:34,929 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 09:25:42,230 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 09:25:59,428 | aci.level2.info | INFO | PROCESS: Generated thought: I am aware only of my immediate reasoning context and recent conversation lines; I do not possess tr...
+2025-09-08 09:27:27,865 | aci.level2.info | INFO | Memory save: episodic_memory
+2025-09-08 09:27:40,846 | aci.level2.info | INFO | PROCESS: Memory retrieval completed
+2025-09-08 09:27:40,928 | aci.level2.info | INFO | PROCESS: Thought graph analysis completed
+2025-09-08 09:27:50,603 | aci.level2.info | INFO | PROCESS: Reflective inner speech completed
+2025-09-08 09:28:11,603 | aci.level2.info | INFO | Memory create: floating_memory
+2025-09-08 09:28:12,942 | aci.level2.info | INFO | Starting pattern analysis
+2025-09-08 09:28:12,956 | aci.level2.info | INFO | Pattern analysis complete
+2025-09-08 09:28:12,963 | aci.level2.info | INFO | Building knowledge graph
+2025-09-08 09:28:13,122 | aci.level2.info | INFO | MEMORY [knowledge_extraction] Periodic extraction completed
+2025-09-08 09:28:13,136 | aci.level2.info | INFO | Memory consolidate: layer1_gc
+2025-09-08 09:28:13,142 | aci.level2.info | INFO | Performance: memory_consolidation_duration = 0.006905317306518555 seconds
+2025-09-08 09:32:46,034 | aci.level2.info | INFO | Memory save: memory_graph
+2025-09-08 09:32:46,056 | aci.level2.info | INFO | Performance: dmn_step_duration = 431.1477973461151 seconds
+2025-09-08 09:32:46,136 | aci.level2.info | INFO | Step completed
+2025-09-08 09:32:46,644 | aci.level2.info | INFO | Simulation step started
+2025-09-08 09:32:50,542 | aci.level2.info | INFO | PROCESS: Sensory input received
+2025-09-08 09:32:55,541 | aci.level2.info | INFO | PROCESS: Scene analysis completed
+2025-09-08 09:33:04,585 | aci.level2.info | INFO | PROCESS: Generated thought: I should have brought a book....
