@@ -1,4 +1,10 @@
-# ACI (Artificial Consciousness Interface) - Persistent Memory System
+# ACI (Artificial Consciousness AI) - Persistent Memory System
+
+[![GitHub stars](https://img.shields.io/github/stars/269652/artificial-consciousness-blueprint?style=social)](https://github.com/269652/artificial-consciousness-ai/stargazers)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Perplexity Assessed](https://img.shields.io/badge/Perplexity-Scientifically%20Exceptional-green.svg)](#scientific-validation)
+
+> **Disclaimer:** This repository is an early proof-of-concept (POC). It is a work in progress, contains experimental code, requires substantial cleanup and maintenance, and is not production-ready. Use for research and experimentation only; do not rely on it for critical systems.
 
 An advanced AI consciousness simulation system with comprehensive persistent memory storage, multi-resolution logging, and knowledge graph extraction.
 
