@@ -1,2 +1,0 @@
-2025-09-08 16:28:43,812 | aci.level2.error | ERROR | Failed to load persistent episodic memories: could not access file "$libdir/vector": No such file or directory
-
