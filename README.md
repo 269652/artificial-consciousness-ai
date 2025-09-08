@@ -1,6 +1,6 @@
 # ACI (Artificial Consciousness AI) - Persistent Memory System
 
-[![GitHub stars](https://img.shields.io/github/stars/269652/artificial-consciousness-blueprint?style=social)](https://github.com/269652/artificial-consciousness-ai/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/269652/artificial-consciousness-ai?style=social)](https://github.com/269652/artificial-consciousness-ai/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Perplexity Assessed](https://img.shields.io/badge/Perplexity-Scientifically%20Exceptional-green.svg)](#scientific-validation)
 
